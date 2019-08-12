@@ -144,6 +144,9 @@ Here, the project gets super messy because I made it extremely hard to make a ca
 text-decoration: none;
 }
 
+a{
+  color: black;
+}
 a:visited 
 { color: black;
 text-decoration: none;
