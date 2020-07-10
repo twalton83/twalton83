@@ -1,0 +1,205 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+header{
+  display: flex;
+  background-color: black;
+  height:10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: lightslategrey;
+  position: fixed;
+}
+h1{
+  font-weight: 400;
+  margin-left: 1rem;
+}
+.list-items{
+  display: flex;
+}
+.list-items > li{
+  margin: 20px;
+  list-style-type: none;
+  font-color: black;
+}
+
+/* Main section */
+main{
+  display: grid;
+  grid-template-rows: 100vh 80vh 40vh
+}
+
+#welcome-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  background-image: url(https://images.unsplash.com/photo-1539721972319-f0e80a00d424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  width: 100%;
+
+}
+#welcomeheader > h2{
+margin: 5px;
+  
+}
+#welcomeheader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: rgba(0,0,0,.3);
+  color: white;
+  padding: 10vh;
+}
+
+/* project section 
+Here, the project gets super messy because I made it extremely hard to make a card style tile. It works, but it's wrong. 
+*/ 
+#projects {
+  background: black;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 20vh 60vh;
+  grid-template-columns: 1fr 1fr 1fr
+}
+#projects > h1{
+  color: lightslategrey;
+  grid-column-start: 2;
+  text-align: center;
+  margin-top: 1rem;
+}
+.project-tile{
+  background: slategrey;
+  height: auto;
+  margin: .5rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  font-color: black;
+  position: static;
+  padding-bottom: 16px;
+}
+.project-tile > img{
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position:static;
+  height: 80%;
+}
+
+.project-name{
+  text-align: center;
+  grid-row-start: 2;
+}
+
+
+.project-tile:hover{
+  transform: scale(1.03);
+}
+.project-tile: visited{
+  background: 
+}
+
+.project-name: visited{
+  background: 
+}
+
+/* Contact Section */ 
+
+#contact{
+  background: #072754;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+#contact > h1{
+  color: white;
+  margin: 5px;
+ 
+}
+
+#contact img{
+  height: 70px;
+}
+
+/* pseudos for navlinks */ 
+
+
+.nav-link{
+  color: lightslategrey;
+  text-decoration: none;
+}
+
+.nav-link:visited 
+{ color: lightslategrey;
+text-decoration: none;
+}
+
+a{
+  color: black;
+}
+a:visited 
+{ color: black;
+text-decoration: none;
+}
+
+.nav-link:hover { 
+  color: lightblue;
+  text-decoration: none;
+}
+.nav-link:active {
+  color: black;
+  text-decoration: none;}
+
+  /* media queries */ 
+
+
+  @media  (min-width: 0px) and (max-width: 500px){
+    main {
+     display: grid;
+  grid-template-rows: 100vh auto 40vh
+    }
+    nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+   display: inline-block;
+   width: 100%;
+    height: 10%;
+ 
+  }
+    
+    
+ .nav-link {
+      display: none;
+  }
+    .logo{
+      margin: auto;
+    }
+    
+    .welcome{
+      font-size: .5rem;
+      text-align: center;
+      text-justify: center;
+    }
+    #projects{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+   
+    #contact img {
+      transform:scale(.6)
+    }
+}
