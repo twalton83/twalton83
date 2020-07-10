@@ -1,0 +1,19 @@
+body {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  background-color: cornflowerblue
+}
+
+.socialImage{
+  height: 5rem;
+  margin: 2rem
+}
+
+.socialImage:hover{
+  transform: scale(1.2);
+}
