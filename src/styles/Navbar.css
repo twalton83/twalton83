@@ -1,0 +1,31 @@
+header{
+   
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    .Navbar{
+        height: 100vh;
+        width: 20vw;
+        border-right: 1px solid transparent;
+        /* -webkit-box-shadow: 8px 0px 10px -2px rgba(0,0,0,0.34);
+        -moz-box-shadow: 8px 0px 10px -2px rgba(0,0,0,0.34);
+        box-shadow: 8px 0px 10px -2px rgba(0,0,0,0.34); */
+    
+    }
+
+    .Navbar-nav{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+ }
