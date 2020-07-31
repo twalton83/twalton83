@@ -19,7 +19,7 @@ export default class AboutMe extends Component {
                 <Paper className="AboutMe-paper" elevation={4}>
 
                 <Typography className="AboutMe-paragraph" align="center"  paragraph = {true} variant = "body1">
-                    I'm a former high performing adidas Originals team captain turned high organic growth social media manager for a celebrity-headed startup, turned six-figure portfolio Jr. project manager. turned Shopify webstore owner and digital marketer, turned web developer. Needless to say, I have always been a bit of a jack of all trades with a high level of interest in many different fields. Being a multifaceted individual keeps it light and fun for me, and gives me a perspective not many have to offer. I consider myself a lifelong learner and find satisfaction in simply attaining knowledge. 
+                    I'm a former high performing adidas Originals team captain turned high organic growth social media manager for a celebrity-headed startup, turned six-figure portfolio Jr. project manager, turned Shopify webstore owner and digital marketer, turned web developer. Needless to say, I have always been a bit of a jack of all trades with a high level of interest in many different fields. Being a multifaceted individual keeps it light and fun for me, and gives me a perspective not many have to offer. I consider myself a lifelong learner and find satisfaction in simply attaining knowledge. 
                 </Typography>
                 <Divider variant="middle"/>
                 <Typography className="AboutMe-paragraph"  align="center"  paragraph = {true} variant = "body1">

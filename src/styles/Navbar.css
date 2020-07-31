@@ -43,7 +43,7 @@ a:visited {
     color: #003b8e
 }
 
-.makeStyles-Navbar_link-2 a:hover{
+a:hover{
     border-bottom: 2px solid white
 }
 
