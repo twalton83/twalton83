@@ -1,0 +1,34 @@
+{
+    "Genneya Walton" :{
+        "name" : "GenneyaWalton.com",
+        "stack" : "HTML/CSS/JS/Bootstrap 4",
+        "link" : "https://genneyawalton.com/",
+        "description" : "Website for Netflix breakout star Genneya Walton of #BLACKAF and Project MC2.",
+        "image" : "https://tatianacodes.s3-us-west-2.amazonaws.com/Screen+Shot+2020-07-30+at+7.15.21+PM.png"
+
+    },
+    "Task.Me" :{
+        "name" : "Task.Me",
+        "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
+        "link" : "https://task-manager-twalton.herokuapp.com/",
+        "description" : "A full-stack task manager app. Think Asana. Complete with PassportJS local strategy log-in system.",
+        "image" : "https://tatianacodes.s3-us-west-2.amazonaws.com/Screen+Shot+2020-07-30+at+7.14.32+PM.png"
+
+    },
+
+    "Catalyst Roster Automation" :{
+        "name" : "Catalyst Roster Automation",
+        "link" : "https://task-manager-twalton.herokuapp.com/",
+        "stack" : "Python 3, Selenium Webdriver, PyAutoGui",
+        "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder.",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/300px-Python-logo-notext.svg.png"
+    },
+    "Discord Bot" :{
+        "name" : "Discord Bot",
+        "link" : "",
+        "stack" : "NodeJS",
+        "description" : "A personal assistant style Discord bot. Pulls stock prices, current weather, and utilizes node based cron jobs to send messages throughout the day to the user.",
+        "image": "https://i.pinimg.com/originals/1a/9a/f1/1a9af177bdcd0bd93568e59bb7600cbe.png"
+    }
+
+}
