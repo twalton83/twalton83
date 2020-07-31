@@ -11,10 +11,7 @@
    padding: 1rem;
 }
 
-.AboutMe-sideProfile{
-    height: 100%;
-    padding-right: 5rem;
-}
+
 
 .sideProfile {
     height: 100%;
@@ -22,11 +19,12 @@
 
 h1 {
     border-bottom: 2px solid #003b8e;
-    margin-bottom: 2rem !important;
 }
 
 
-@media (min-width:365px) { /* smartphones, Android phones, landscape iPhone */ 
+
+
+@media (min-width:320px) { /* smartphones, Android phones, landscape iPhone */ 
     .AboutMe-img{
         height: 200px;
         margin: 1rem;
@@ -50,5 +48,12 @@ h1 {
     
     }
 
+    .AboutMe-sideProfile{
+        height: 100%;
+        padding-right: 5rem;
+    }
+    
+
+   
    
  }

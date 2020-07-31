@@ -7,8 +7,6 @@ export default class AboutMe extends Component {
             <Grid className="AboutMe-grid" container justify="center" alignContent = 'center' alignItems = 'center'>
                 <Grid item xs={12} md={6} className="AboutMe-sideProfile">
                 <Grid container justify="center" alignContent = 'center' alignItems = 'center' className="sideProfile">
-
-                
                 <Typography variant="h2" component="h1">
                     Tatiana Walton
                 </Typography>

@@ -107,7 +107,7 @@ export default function Navbar(props){
       <MenuIcon />
     </IconButton>
     </Hidden>
-        <Typography edge = "start" variant = "h4" component = "h1"> 
+        <Typography edge = "start" className= "title" variant = "h4" component = "h1"> 
             <NavLink exact to="/" className="Navbar-title" >
             Tatiana.Codes
             </NavLink>  
@@ -148,8 +148,8 @@ export default function Navbar(props){
                 }}
               >
                 <div className={classes.drawerHeader}>
-                  <IconButton >
-                    {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                  <IconButton  onClick={handleDrawerClose}>
+                    {theme.direction === 'ltr' ? <ChevronLeftIcon  /> : <ChevronRightIcon />}
                   </IconButton>
                 </div>
                 <Divider />
