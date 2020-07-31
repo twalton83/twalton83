@@ -12,11 +12,17 @@
 }
 
 .AboutMe-sideProfile{
-    height: 100%
+    height: 100%;
+    padding-right: 5rem;
 }
 
 .sideProfile {
     height: 100%;
+}
+
+h1 {
+    border-bottom: 2px solid #003b8e;
+    margin-bottom: 2rem !important;
 }
 
 
@@ -40,7 +46,7 @@
    
     .AboutMe-img{
         height: 35vh;
-        margin: 1rem;
+        margin-top: 2rem !important;
     
     }
 
