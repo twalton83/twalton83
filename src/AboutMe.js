@@ -10,16 +10,14 @@ export default class AboutMe extends Component {
                     Tatiana Walton
                 </Typography>
                 <Typography variant = "h6">
-                    Web Developer, Jr. Project Manager, Social Media Consulting
+                    Web Developer | Jr. Project Manager | Social Media Consulting 
                 </Typography>
                 <img className="AboutMe-img" alt="Tatiana Walton" src = 'https://tatianacodes.s3-us-west-2.amazonaws.com/profile.jpg'/>
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                 <Paper className="AboutMe-paper" elevation={4}>
-                <Typography align="center" variant="h4">
-                    A Blurb About Me
-                </Typography>
+
                 <Typography className="AboutMe-paragraph" align="center"  paragraph = {true} variant = "body1">
                     I'm a former high performing adidas Originals team captain turned high organic growth social media manager for a celebrity-headed startup, turned six-figure portfolio Jr. project manager. turned Shopify webstore owner and digital marketer, turned web developer. Needless to say, I have always been a bit of a jack of all trades with a high level of interest in many different fields. Being a multifaceted individual keeps it light and fun for me, and gives me a perspective not many have to offer. I consider myself a lifelong learner and find satisfaction in simply attaining knowledge. 
                 </Typography>
