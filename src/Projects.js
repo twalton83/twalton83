@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {IconButton, Typography, Grid, Container} from '@material-ui/core'
+import {Grid} from '@material-ui/core'
 
 import ProjectCard from './ProjectCard'
 import projects from './Projects.json'
@@ -7,7 +7,7 @@ export default class Projects extends Component {
     render() {
         const projectList = Object.entries(projects).map((e) => ( e[1]));
         const projectCards = projectList.map(project =>(
-            <Grid item xs={9} key = {project.name} className ="Projects-card">
+            <Grid item xs={12} md={9} key = {project.name} className ="Projects-card">
                 <ProjectCard
                 name={project.name} 
                 stack={project.stack}

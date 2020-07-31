@@ -1,0 +1,39 @@
+.AboutMe-img{
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,59,142,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,59,142,1);
+    box-shadow: 0px 0px 20px 0px rgba(0,59,142,1);
+    border-radius: 50%;
+    border: 1px solid #003b8e;
+}
+
+.AboutMe-paragraph{
+   margin: 1rem !important;
+}
+
+
+@media (min-width:365px) { /* smartphones, Android phones, landscape iPhone */ 
+    .AboutMe-img{
+        height: 200px;
+        margin: 1rem;
+        
+    }
+    .AboutMe-paper{
+        width: 100%;
+    }
+
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+
+@media (min-width:1025px) { 
+    .AboutMe-grid{
+        height : 80%
+    }
+   
+    .AboutMe-img{
+        height: 35vh;
+        margin: 1rem;
+    
+    }
+
+   
+ }

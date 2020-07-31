@@ -1,27 +1,24 @@
 import React, { Component } from 'react'
-import EmailIcon from '@material-ui/icons/Email';
-
-import {IconButton, Typography, Grid} from '@material-ui/core'
+import { Grid} from '@material-ui/core'
+import "./styles/Contact.css"
 
 export default class Contact extends Component {
     render() {
         return (
-            <div>
-                <Typography variant = "h2">
-                    Let's Chat!
-                </Typography>
-                <Grid>
+                <Grid className="Contact" container justify="center" alignContent = 'center' alignItems = 'center'>
+                    <Grid item xs ={12} md={4}>
                     <img alt ="LinkedIn Logo" src="https://icongr.am/devicon/linkedin-original.svg?size=128&color=currentColor"></img>
-                    <img alt ="Github Logo" src="https://icongr.am/devicon/github-original.svg?size=128&color=currentColor"></img>
-                    <IconButton aria-label="email" color="primary" size="large">
-                       <a href="mailto:hello@tatianacodes.com">
-                            <EmailIcon size="medium"/>
-                       </a>
-                   </IconButton>
+                    </Grid>
+                   <Grid item xs = {12} md={4}>
+                   <img alt ="Github Logo" src="https://icongr.am/devicon/github-original.svg?size=128&color=currentColor"></img>
+                   </Grid>
+                   <Grid item xs = {12} md={4}>
+                    <a href="mailto:hello@tatianacodes.com">
+                   <img src="https://tatianacodes.s3-us-west-2.amazonaws.com/emailIcon.png" style = {{"height" : "136px"}}alt="Email Me"/>
+                   </a>
+                   </Grid>
+                   
                 </Grid>
-                  
-                  
-            </div>
         )
     }
 }

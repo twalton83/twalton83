@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import skills from './Skills.json'
 import './styles/Skillset.css'
 import Grid from '@material-ui/core/Grid'
-import { Typography } from '@material-ui/core';
 export default class Skillset extends Component {
        
     render() {

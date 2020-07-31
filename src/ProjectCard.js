@@ -1,6 +1,5 @@
 
 import React from 'react';
-import {Link} from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -54,10 +53,8 @@ export default function RecipeReviewCard(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="link">
-          
-          <ShareIcon onClick={() => window.open(`${props.link}`)}/>
-          
+        <IconButton onClick={() => window.open(`${props.link}`)} aria-label="link">
+          <ShareIcon/>
         </IconButton>
       </CardActions>
     </Card>
