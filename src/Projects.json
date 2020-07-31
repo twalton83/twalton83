@@ -4,7 +4,7 @@
         "stack" : "HTML/CSS/JS/Bootstrap 4",
         "link" : "https://genneyawalton.com/",
         "description" : "Website for Netflix breakout star Genneya Walton of #BLACKAF and Project MC2.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/genneyaWalton.jp2"
+        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/genneyaWalton.jpg"
 
     },
     "Task.Me" :{
@@ -12,7 +12,7 @@
         "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
         "link" : "https://task-manager-twalton.herokuapp.com/",
         "description" : "A full-stack task manager app. Think Asana. Complete with PassportJS local strategy log-in system.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jp2"
+        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
 
     },
 
@@ -21,14 +21,14 @@
         "link" : "https://task-manager-twalton.herokuapp.com/",
         "stack" : "Python 3, Selenium Webdriver, PyAutoGui",
         "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jp2"
+        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jpg"
     },
     "Discord Bot" :{
         "name" : "Discord Bot",
         "link" : "",
         "stack" : "NodeJS",
         "description" : "A personal assistant style Discord bot. Pulls stock prices, current weather, and utilizes node based cron jobs to send messages throughout the day to the user.",
-        "image": "https://d2pry8dqxtkkrh.cloudfront.net/DiscordLogo.jp2"
+        "image": "https://d2pry8dqxtkkrh.cloudfront.net/DiscordLogo.jpg"
     }
 
 }
