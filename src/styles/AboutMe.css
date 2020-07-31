@@ -8,6 +8,15 @@
 
 .AboutMe-paragraph{
    margin: 1rem !important;
+   padding: 1rem;
+}
+
+.AboutMe-sideProfile{
+    height: 100%
+}
+
+.sideProfile {
+    height: 100%;
 }
 
 
@@ -26,7 +35,7 @@
 
 @media (min-width:1025px) { 
     .AboutMe-grid{
-        height : 80%
+        height : 90%
     }
    
     .AboutMe-img{
