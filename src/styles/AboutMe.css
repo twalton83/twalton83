@@ -9,6 +9,7 @@
 .AboutMe-paragraph{
    margin: 1rem !important;
    padding: 1rem;
+   width: auto
 }
 
 
@@ -51,6 +52,11 @@ h1 {
     .AboutMe-sideProfile{
         height: 100%;
         padding-right: 5rem;
+       
+    }
+
+    .AboutMe-paper{
+        width: auto;
     }
     
 

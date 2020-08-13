@@ -18,14 +18,14 @@
 
     "Catalyst Roster Automation" :{
         "name" : "Catalyst Roster Automation",
-        "link" : "https://task-manager-twalton.herokuapp.com/",
+        "link" : "https://github.com/twalton83/Catalyst-Roster-Automation",
         "stack" : "Python 3, Selenium Webdriver, PyAutoGui",
         "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder.",
         "image" : "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jpg"
     },
     "Discord Bot" :{
         "name" : "Discord Bot",
-        "link" : "",
+        "link" : "https://github.com/twalton83/discordbot",
         "stack" : "NodeJS",
         "description" : "A personal assistant style Discord bot. Pulls stock prices, current weather, and utilizes node based cron jobs to send messages throughout the day to the user.",
         "image": "https://d2pry8dqxtkkrh.cloudfront.net/DiscordLogo.jpg"
