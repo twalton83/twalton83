@@ -23,7 +23,15 @@ h1 {
 }
 
 
+.AboutMe-paper {
+    height: auto;
+    width: auto !important;
+}
 
+.paper-container {
+    height: 80vh;
+    width: auto
+}
 
 @media (min-width:320px) { /* smartphones, Android phones, landscape iPhone */ 
     .AboutMe-img{
@@ -55,10 +63,6 @@ h1 {
        
     }
 
-    .AboutMe-paper{
-        width: auto;
-    }
-    
 
    
    
