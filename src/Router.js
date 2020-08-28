@@ -4,12 +4,20 @@ import AboutMe from './AboutMe';
 import Skillset from './Skillset';
 import Projects from './Projects'
 import Contact from './Contact';
-import './styles/Router.css'
+import {withStyles} from '@material-ui/core/styles'
 
-export default class Router extends Component {
+const styles = theme => ({
+    Router : {
+        width: '100%',
+        height: '90vh',
+    }
+})
+
+class Router extends Component {
     render() {
+        const {classes} = this.props
         return (
-            <div className = 'Router'>
+            <div className = {classes.Router}>
                 <Switch>
                     <Route exact path = "/" render= {() => <AboutMe/>}/>
                     <Route exact path = "/projects" render= {()=><Projects/>}/>
@@ -20,3 +28,5 @@ export default class Router extends Component {
         )
     }
 }
+
+export default withStyles(styles)(Router)

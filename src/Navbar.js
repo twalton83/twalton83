@@ -1,6 +1,5 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import './styles/Navbar.css'
 import { Typography, IconButton, AppBar, Toolbar, Button, Hidden} from '@material-ui/core'
 import { makeStyles, withStyles, useTheme} from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -14,14 +13,33 @@ import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 
 
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      flexGrow: 1
+      flexGrow: 1,
+      
     },
     Navbar_link:{
-        flexGrow: 1
+        flexGrow: 1,
+        fontSize: '1.5rem',
+        fontWeight: '300',
+        textDecoration: 'none',
+    },
+    NavLink : {
+        fontSize: '1.5rem',
+        fontWeight: '300',
+        textDecoration: 'inherit',
+        '&active' : {
+          borderBottom: '2px solid white',
+        },
+        '&:visited' : {
+          color : 'white'
+        },
+        "&:hover" : {
+          borderBottom: '2px solid white'
+        }
     },
     hide: {
         display: 'none',
@@ -58,6 +76,9 @@ const useStyles = makeStyles((theme) => ({
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
       },
+      drawerLink : {
+        color: '#003b8e'
+      },
       content: {
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -73,7 +94,31 @@ const useStyles = makeStyles((theme) => ({
           duration: theme.transitions.duration.enteringScreen,
         }),
         marginLeft: 0,
+      },
+      NavbarTitle :{
+        fontSize: '2rem',
+        [theme.breakpoints.down('sm')] : {
+            // position: 'absolute',
+            left : '100%'
+        },
+        fontWeight: '300',
+        textDecoration: 'none',
+        color: 'white',
+        flexGrow: 1,
+        
+     
+    },
+    NavbarTitleLink : {
+      textDecoration: 'none',
+      marginLeft: '-28px',
+      '&:visited' : {
+        color : 'white'
       }
+    },
+    ActiveNavLink : {
+      fontWeight: 500
+    }
+    
   }));
 
   const ColorButton = withStyles((theme) => ({
@@ -107,31 +152,32 @@ export default function Navbar(props){
       <MenuIcon />
     </IconButton>
     </Hidden>
-        <Typography edge = "start" className= "title" variant = "h4" component = "h1"> 
-            <NavLink exact to="/" className="Navbar-title" >
+        <Typography edge = "start"  className={classes.NavbarTitle} variant = "h4" component = "h1"> 
+            <NavLink className={classes.NavbarTitleLink}
+           exact to="/"  >
             Tatiana.Codes
             </NavLink>  
         </Typography>
 
         <Hidden smDown>
         <Typography variant="h6" className={classes.Navbar_link}>
-            <NavLink exact to="/" activeClassName ="active-link" >
+            <NavLink exact to="/" className = {classes.NavLink} activeClassName ={classes.ActiveNavLink}>
                 About
             </NavLink>
         </Typography>
         <Typography variant="h6" className = {classes.Navbar_link}>
-            <NavLink exact to="skills" activeClassName ="active-link" >
+            <NavLink className = {classes.NavLink} exact to="skills" activeClassName ={classes.ActiveNavLink} >
             Skills
             </NavLink>
         </Typography>
         <Typography variant="h6" className = {classes.Navbar_link}>
-            <NavLink exact to="projects" activeClassName ="active-link" >
+            <NavLink className = {classes.NavLink} exact to="projects" activeClassName ={classes.ActiveNavLink} >
             Projects
             </NavLink>
         </Typography>
         
         <ColorButton>
-            <NavLink exact to="contact" activeClassName ="active-link" >
+            <NavLink className = {classes.NavLink} exact to="contact" activeClassName ={classes.ActiveNavLink} >
                 Contact Me
             </NavLink>
         </ColorButton>
@@ -157,7 +203,7 @@ export default function Navbar(props){
                   {[{name: 'Skills', route : '/skills'} , { name: 'Projects', route: '/projects'}, {name: 'Contact Me', route:'/contact'}].map((text, index) => (
                     <NavLink  key={text.name} exact to={text.route} onClick={handleDrawerClose}>
                     <ListItem button >
-                    <ListItemText className="Navbar-drawerLink" primary={text.name} />
+                    <ListItemText className={classes.drawerLink} primary={text.name} />
                     </ListItem>
                     </NavLink>
                   ))}

@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
 import { Grid} from '@material-ui/core'
-import "./styles/Contact.css"
+import {withStyles} from '@material-ui/core/styles'
 
-export default class Contact extends Component {
+const styles = theme => ({
+    Contact : {
+        height: "100%"
+    }
+})
+
+
+
+class Contact extends Component {
     render() {
+        const {classes} = this.props
         return (
-                <Grid className="Contact" container justify="center" alignContent = 'center' alignItems = 'center'>
+                <Grid className={classes.Contact} container justify="center" alignContent = 'center' alignItems = 'center'>
                     <Grid item xs ={12} md={4}>
                     <a href="https://www.linkedin.com/in/tatianadwalton/">
                     <img alt ="LinkedIn Logo" src="https://icongr.am/devicon/linkedin-original.svg?size=128&color=currentColor"></img>
@@ -26,3 +35,5 @@ export default class Contact extends Component {
         )
     }
 }
+
+export default withStyles(styles)(Contact)

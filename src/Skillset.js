@@ -1,10 +1,26 @@
 import React, { Component } from 'react'
 import skills from './Skills.json'
-import './styles/Skillset.css'
 import Grid from '@material-ui/core/Grid'
-export default class Skillset extends Component {
+import {withStyles} from '@material-ui/core/styles'
+
+const styles = theme => ({
+    Skillset :{
+        width: '100%',
+        height: '100%',
+        [theme.breakpoints.up('md')] : {
+            "&hover:" : {
+                transform: 'scale(1.1)'
+            }
+        } 
+    }
+   
+})
+
+
+class Skillset extends Component {
        
     render() {
+        const {classes} = this.props
         const skillList = Object.entries(skills).map((e) => ( e[1]));
         const skillElements = skillList.map(skill =>(
             <Grid item xs={6} sm={3} key = {skill.name} className ="Skillset-skill">
@@ -12,10 +28,13 @@ export default class Skillset extends Component {
             </Grid>
            
         ))
+
         return (
-            <Grid container className="Skillset">
+            <Grid container className={classes.Skillset}>
                 {skillElements}
             </Grid>
         )
     }
 }
+
+export default withStyles(styles)(Skillset)
