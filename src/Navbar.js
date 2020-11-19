@@ -26,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.5rem',
         fontWeight: '300',
         textDecoration: 'inherit',
+        color: '#e8e8e8',
+        "& a" : {
+          color: '#e8e8e8'
+        },
         '&active' : {
           borderBottom: '2px solid #f05454',
         },
@@ -92,6 +96,9 @@ const useStyles = makeStyles((theme) => ({
       },
       navLinks: {
         color: '#e8e8e8',
+        "& a:" : {
+          color: '#e8e8e8'
+        },
           textDecoration: 'none',
           "&:visited" : {
             textDecoration: 'none'
