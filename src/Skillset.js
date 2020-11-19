@@ -7,11 +7,19 @@ const styles = theme => ({
     Skillset :{
         width: '100%',
         height: 'auto',
+    
         [theme.breakpoints.up('md')] : {
             "&hover:" : {
-                transform: 'scale(1.1)'
+                transform: 'scale(1.1)',
+                marginTop: '1rem',
             }
+        } ,
+        [theme.breakpoints.down('sm')] : {
+            paddingBottom: '3rem',
         } 
+    },
+    SkillsetSkill : {
+        margin: '1rem'
     }
    
 })
@@ -23,7 +31,7 @@ class Skillset extends Component {
         const {classes} = this.props
         const skillList = Object.entries(skills).map((e) => ( e[1]));
         const skillElements = skillList.map(skill =>(
-            <Grid item xs={6} sm={3} key = {skill.name} className ="Skillset-skill">
+            <Grid item xs={4} sm={2} key = {skill.name} className ={classes.SkillsetSkill}>
                 <img alt ={skill.name} src={`https://icongr.am/devicon/${skill.image}.svg?size=148&color=currentColor`}></img>
             </Grid>
            
