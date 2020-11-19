@@ -29,8 +29,10 @@ const styles = theme =>  ({
             height : '100%',
             [theme.breakpoints.up('md')]: {
                 marginTop: '10%'
-              }
-            
+              },
+              [theme.breakpoints.down('sm')] :{ 
+                height: '100vh'
+             } 
     },
     subHeaders : {
         color: '#e8e8e8',
