@@ -20,7 +20,10 @@ const styles = theme =>  ({
     
     h1 : {
         width: '100%',
-        color: '#e8e8e8'
+        color: '#e8e8e8',
+        [theme.breakpoints.down('sm')] :{ 
+           fontSize: '2rem'
+        } 
     },
     AboutMeGrid : {
             height : '100%',
