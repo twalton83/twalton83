@@ -23,7 +23,8 @@ const styles = theme =>  ({
         color: '#e8e8e8'
     },
     AboutMeGrid : {
-            height : '100vh'
+            height : '100%',
+            marginTop: '10%'
     },
     subHeaders : {
         color: '#e8e8e8',
@@ -40,8 +41,10 @@ const styles = theme =>  ({
             backgroundColor: "#f05454"
         },
         "& a" :{
-            color: 'inherit',
+            color: '#FFFFFF',
             textDecoration: 'none',
+            fontWeight: 500,
+            fontSize: '1.2rem'
         },
         "& svg" : {
             margin: '0 auto'

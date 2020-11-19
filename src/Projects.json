@@ -9,7 +9,7 @@
     },
     "Cherub 214" :{
         "name" : "Cherub 214 - Shopify Template",
-        "link" : " ",
+        "link" : "",
         "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
         "description" : "A client project for a New York streetwear designer. This project leveraged Bootstrap 4.5, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client, and periodic updates have been included. Link currently not available.",
         "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/cherub214.myshopify.com_.png"

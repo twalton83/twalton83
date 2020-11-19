@@ -16,10 +16,8 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      
     },
     Navbar_link:{
-        flexGrow: 1,
         fontSize: '1.5rem',
         fontWeight: '300',
         textDecoration: 'none',
@@ -40,6 +38,13 @@ const useStyles = makeStyles((theme) => ({
     },
     hide: {
         display: 'none',
+      },
+      toolBar :{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems : 'center',
+        justifyContent: 'space-evenly'
+    
       },
       appBar: {
         transition: theme.transitions.create(['margin', 'width'], {
@@ -85,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
       
       },
       navLinks: {
-        
+        color: '#e8e8e8',
           textDecoration: 'none',
           "&:visited" : {
             textDecoration: 'none'
@@ -125,10 +130,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#f05454"
       },
       "& a" : {
-        color: "#222831",
+        color: theme.palette.getContrastText("#f05454"),
         textDecoration: 'none',
         fontSize: '1.5rem',
-        fontWeight: '300',
+        fontWeight: '500',
       },
       "&.NavLink" : {
         "&:hover" : {
@@ -152,7 +157,7 @@ export default function Navbar(props){
     return (
         <div>
     <AppBar className= {classes.appBar} position="sticky">
-        <Toolbar>
+        <Toolbar className = {classes.toolBar}>
         <Hidden mdUp>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleDrawerOpen}>
           <MenuIcon />
