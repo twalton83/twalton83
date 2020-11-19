@@ -23,7 +23,7 @@ const styles = theme =>  ({
         color: '#e8e8e8'
     },
     AboutMeGrid : {
-            height : '100%'
+            height : '100vh'
     },
     subHeaders : {
         color: '#e8e8e8',

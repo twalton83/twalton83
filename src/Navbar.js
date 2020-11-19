@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
           duration: theme.transitions.duration.leavingScreen,
           
         }),
-        backgroundColor: '#f05454',
+        backgroundColor: '#30475e',
         boxShadow: 'none'
       },
       appBarShift: {
@@ -122,12 +122,17 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: '0',
       boxShadow: '5px 5px rgba(0,0,0,.3);',
       "&:hover" : {
-        backgroundColor: 'backgroundColor: "#f05454'
+        backgroundColor: "#f05454"
+      },
+      "& a" : {
+        color: "#222831",
+        textDecoration: 'none',
+        fontSize: '1.5rem',
+        fontWeight: '300',
       },
       "&.NavLink" : {
         "&:hover" : {
-          borderBottom: 'none',
-         
+          borderBottom: 'none',  
         }
       }
      
@@ -171,7 +176,7 @@ export default function Navbar(props){
         </Typography>
         
         <ColorButton>
-            <NavLink className = {classes.NavLink} exact to="contact" activeClassName ={classes.ActiveNavLink}>
+            <NavLink exact to="contact">
                 Contact Me
             </NavLink>
         </ColorButton>

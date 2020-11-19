@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "100%",
     margin: "1rem",
+    boxShadow: '0px 7px 10px rgba(0,0,0,0.5)'
   
   },
   media: {
