@@ -17,7 +17,7 @@ class Router extends Component {
     render() {
         const {classes} = this.props
         return (
-            <div className = {classes.Router}>
+            <div>
                 <Switch>
                     <Route exact path = "/" render= {() => <AboutMe/>}/>
                     <Route exact path = "/projects" render= {()=><Projects/>}/>

@@ -13,12 +13,14 @@ import ShareIcon from '@material-ui/icons/Share';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "100%",
-    margin: "1rem"
+    margin: "1rem",
+  
   },
   media: {
     height: 50,
     marginTop: '20px',
     paddingTop: '56.25%', // 16:9
+    backgroundSize : "contain"
   },
   expand: {
     transform: 'rotate(0deg)',

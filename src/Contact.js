@@ -4,7 +4,7 @@ import {withStyles} from '@material-ui/core/styles'
 
 const styles = theme => ({
     Contact : {
-        height: "100%"
+        height: "100vh"
     }
 })
 

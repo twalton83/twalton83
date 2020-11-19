@@ -45,11 +45,6 @@
     "Heroku" :{
         "image": "heroku-original-wordmark",
         "name" : "heroku"
-    },
-   
-    "WordPress" : {
-        "image":"wordpress-original",
-        "name" : "wordpress"
     }
 
 }

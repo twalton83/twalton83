@@ -1,12 +1,4 @@
 {
-    "Genneya Walton" :{
-        "name" : "GenneyaWalton.com",
-        "stack" : "HTML/CSS/JS/Bootstrap 4",
-        "link" : "https://genneyawalton.com/",
-        "description" : "Website for Netflix breakout star Genneya Walton of #BLACKAF and Project MC2.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/genneyaWalton.jpg"
-
-    },
     "Task.Me" :{
         "name" : "Task.Me",
         "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
@@ -14,6 +6,20 @@
         "description" : "A full-stack task manager app. Think Asana. Complete with PassportJS local strategy log-in system.",
         "image" : "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
 
+    },
+    "Cherub 214" :{
+        "name" : "Cherub 214 - Shopify Template",
+        "link" : " ",
+        "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
+        "description" : "A client project for a New York streetwear designer. This project leveraged Bootstrap 4.5, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client, and periodic updates have been included. Link currently not available.",
+        "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/cherub214.myshopify.com_.png"
+    },
+    "Tender Gear" :{
+        "name" : "Tender Gear - Shopify Template",
+        "link" : "",
+        "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
+        "description" : "A client project for a hockey related merchandise vendor. This project leveraged mostly plain CSS with Sass, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client, and periodic updates have been included. Link currently not available.",
+        "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/OurStory.jpg"
     },
 
     "Catalyst Roster Automation" :{
@@ -23,12 +29,13 @@
         "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder.",
         "image" : "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jpg"
     },
-    "Discord Bot" :{
-        "name" : "Discord Bot",
-        "link" : "https://github.com/twalton83/discordbot",
-        "stack" : "NodeJS",
-        "description" : "A personal assistant style Discord bot. Pulls stock prices, current weather, and utilizes node based cron jobs to send messages throughout the day to the user.",
-        "image": "https://d2pry8dqxtkkrh.cloudfront.net/DiscordLogo.jpg"
+    "Genneya Walton" :{
+        "name" : "GenneyaWalton.com",
+        "stack" : "HTML/CSS/JS/Bootstrap 4",
+        "link" : "https://genneyawalton.com/",
+        "description" : "Website for Netflix breakout star Genneya Walton of #BLACKAF and Project MC2.",
+        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/genneyaWalton.jpg"
+
     }
 
 }

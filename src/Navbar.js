@@ -12,10 +12,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 
-
-
 const drawerWidth = 240;
-
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -32,13 +29,13 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '300',
         textDecoration: 'inherit',
         '&active' : {
-          borderBottom: '2px solid white',
+          borderBottom: '2px solid #f05454',
         },
         '&:visited' : {
           color : 'white'
         },
         "&:hover" : {
-          borderBottom: '2px solid white'
+          borderBottom: '2px solid #f05454'
         }
     },
     hide: {
@@ -48,7 +45,10 @@ const useStyles = makeStyles((theme) => ({
         transition: theme.transitions.create(['margin', 'width'], {
           easing: theme.transitions.easing.sharp,
           duration: theme.transitions.duration.leavingScreen,
+          
         }),
+        backgroundColor: '#f05454',
+        boxShadow: 'none'
       },
       appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -64,9 +64,11 @@ const useStyles = makeStyles((theme) => ({
       drawer: {
         width: drawerWidth,
         flexShrink: 0,
+        backgroundColor: '#30475e'
       },
       drawerPaper: {
         width: drawerWidth,
+        backgroundColor: '#30475e'
       },
       drawerHeader: {
         display: 'flex',
@@ -75,9 +77,19 @@ const useStyles = makeStyles((theme) => ({
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
+        backgroundColor: '#f05454'
       },
       drawerLink : {
-        color: '#003b8e'
+        color: '#e8e8e8',
+       textDecoration: 'none'
+      
+      },
+      navLinks: {
+        
+          textDecoration: 'none',
+          "&:visited" : {
+            textDecoration: 'none'
+        }
       },
       content: {
         flexGrow: 1,
@@ -87,6 +99,7 @@ const useStyles = makeStyles((theme) => ({
           duration: theme.transitions.duration.leavingScreen,
         }),
         marginLeft: -drawerWidth,
+        backgroundColor: '#30475e'
       },
       contentShift: {
         transition: theme.transitions.create('margin', {
@@ -95,70 +108,51 @@ const useStyles = makeStyles((theme) => ({
         }),
         marginLeft: 0,
       },
-      NavbarTitle :{
-        fontSize: '2rem',
-        [theme.breakpoints.down('sm')] : {
-            // position: 'absolute',
-            left : '100%'
-        },
-        fontWeight: '300',
-        textDecoration: 'none',
-        color: 'white',
-        flexGrow: 1,
-        
-     
-    },
-    NavbarTitleLink : {
-      textDecoration: 'none',
-      marginLeft: '-28px',
-      '&:visited' : {
-        color : 'white'
-      }
-    },
     ActiveNavLink : {
-      fontWeight: 500
+      fontWeight: 500,
+      borderBottom: '2px solid #f05454',
     }
     
   }));
 
   const ColorButton = withStyles((theme) => ({
     root: {
-      color: theme.palette.getContrastText("#5e91f2"),
-      backgroundColor: "#5e91f2",
-      '&:hover': {
-        backgroundColor: "#5e91f2",
+      color: theme.palette.getContrastText("#f05454"),
+      backgroundColor: "#f05454",
+      borderRadius: '0',
+      boxShadow: '5px 5px rgba(0,0,0,.3);',
+      "&:hover" : {
+        backgroundColor: 'backgroundColor: "#f05454'
       },
+      "&.NavLink" : {
+        "&:hover" : {
+          borderBottom: 'none',
+         
+        }
+      }
+     
     },
   }))(Button);
 
 export default function Navbar(props){
-
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const theme = useTheme();
     const handleDrawerOpen = () => {
         setOpen(true);
     };
-
     const handleDrawerClose = () => {
         setOpen(false);
     };
     return (
         <div>
-    <AppBar position="sticky">
+    <AppBar className= {classes.appBar} position="sticky">
         <Toolbar>
         <Hidden mdUp>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleDrawerOpen}>
-      <MenuIcon />
-    </IconButton>
-    </Hidden>
-        <Typography edge = "start"  className={classes.NavbarTitle} variant = "h4" component = "h1"> 
-            <NavLink className={classes.NavbarTitleLink}
-           exact to="/"  >
-            Tatiana.Codes
-            </NavLink>  
-        </Typography>
-
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleDrawerOpen}>
+          <MenuIcon />
+          </IconButton>
+        </Hidden>
         <Hidden smDown>
         <Typography variant="h6" className={classes.Navbar_link}>
             <NavLink exact to="/" className = {classes.NavLink} activeClassName ={classes.ActiveNavLink}>
@@ -177,7 +171,7 @@ export default function Navbar(props){
         </Typography>
         
         <ColorButton>
-            <NavLink className = {classes.NavLink} exact to="contact" activeClassName ={classes.ActiveNavLink} >
+            <NavLink className = {classes.NavLink} exact to="contact" activeClassName ={classes.ActiveNavLink}>
                 Contact Me
             </NavLink>
         </ColorButton>
@@ -194,21 +188,20 @@ export default function Navbar(props){
                 }}
               >
                 <div className={classes.drawerHeader}>
-                  <IconButton  onClick={handleDrawerClose}>
+                  <IconButton  className = {classes.drawerLink} onClick={handleDrawerClose}>
                     {theme.direction === 'ltr' ? <ChevronLeftIcon  /> : <ChevronRightIcon />}
                   </IconButton>
                 </div>
                 <Divider />
                 <List>
-                  {[{name: 'Skills', route : '/skills'} , { name: 'Projects', route: '/projects'}, {name: 'Contact Me', route:'/contact'}].map((text, index) => (
-                    <NavLink  key={text.name} exact to={text.route} onClick={handleDrawerClose}>
+                  {[{name: 'About', route: '/'},{name: 'Skills', route : '/skills'} , { name: 'Projects', route: '/projects'}, {name: 'Contact Me', route:'/contact'}].map((text, index) => (
+                    <NavLink className= {classes.navLinks} key={text.name} exact to={text.route} onClick={handleDrawerClose}>
                     <ListItem button >
                     <ListItemText className={classes.drawerLink} primary={text.name} />
                     </ListItem>
                     </NavLink>
                   ))}
                 </List>
-                <Divider />
                
               </Drawer>
               </div>
