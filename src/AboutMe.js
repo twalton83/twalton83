@@ -24,7 +24,10 @@ const styles = theme =>  ({
     },
     AboutMeGrid : {
             height : '100%',
-            marginTop: '10%'
+            [theme.breakpoints.up('md')]: {
+                marginTop: '10%'
+              }
+            
     },
     subHeaders : {
         color: '#e8e8e8',
@@ -65,7 +68,10 @@ class AboutMe extends Component {
                     Full Stack Developer and Shopify Partner
                 </Typography>
                 <Typography className={classes.AboutMeParagraph} align="left"  paragraph = {true} variant = "body1">
-                   I'm Tatiana, a fullstack web developer, specializing in MongoDB, Express, React, and Node, with a newfound love of Python. I am also a certified Shopify Partner and have experience in creating Liquid templates with Theme Kit. I built a professional foundation in retail streetwear, and landed a position as the social media manager for a wellness startup founded by a Grammy nominated singer in Los Angeles. Shortly after, I became an IT Jr. Project Manager and gained significant experience in working with client partners in high stakes software and hardware endeavors. I have a love of learning and a deep sense of curiosity and inquisitiveness. 
+                   I'm Tatiana, a fullstack web developer, specializing in MongoDB, Express, React, and Node, with a newfound love of Python. I am also a certified Shopify Partner and have experience in creating Liquid templates with Theme Kit. I I have a love of learning and a deep sense of curiosity and inquisitiveness. 
+                </Typography>
+                <Typography className={classes.AboutMeParagraph} align="left"  paragraph = {true} variant = "body1">
+                I built a professional foundation in retail streetwear, and landed a position as the social media manager for a wellness startup founded by a Grammy nominated singer in Los Angeles. Shortly after, I became an IT Jr. Project Manager and gained significant experience in working with client partners in high stakes software and hardware endeavors.
                 </Typography>
                 <Button className = {classes.button} endIcon={<NavigateNextIcon/>}>
                         <Link exact to='projects'>

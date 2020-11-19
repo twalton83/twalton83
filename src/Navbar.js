@@ -41,10 +41,11 @@ const useStyles = makeStyles((theme) => ({
       },
       toolBar :{
         display: 'flex',
-        flexDirection: 'row',
-        alignItems : 'center',
-        justifyContent: 'space-evenly'
-    
+        [theme.breakpoints.up('md')]: {
+          flexDirection: 'row',
+          alignItems : 'center',
+          justifyContent: 'space-evenly'
+        }
       },
       appBar: {
         transition: theme.transitions.create(['margin', 'width'], {

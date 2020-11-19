@@ -6,7 +6,7 @@ import {withStyles} from '@material-ui/core/styles'
 const styles = theme => ({
     Skillset :{
         width: '100%',
-        height: '100vh',
+        height: 'auto',
         [theme.breakpoints.up('md')] : {
             "&hover:" : {
                 transform: 'scale(1.1)'
