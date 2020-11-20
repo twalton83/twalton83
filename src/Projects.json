@@ -16,9 +16,9 @@
     },
     "Tender Gear" :{
         "name" : "Tender Gear - Shopify Template",
-        "link" : "",
+        "link" : "https://tender-gear-test-store.myshopify.com/",
         "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
-        "description" : "A client project for a hockey related merchandise vendor. This project leveraged mostly plain CSS with Sass, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client, and periodic updates have been included. Link currently not available.",
+        "description" : "A client project for a hockey related merchandise vendor. This project leveraged mostly plain CSS with Sass, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client. I periodically provide the client with updated versions as Shopify makes tools such as Sass deprecated on their platform. Use password: admin to access the store below.",
         "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/OurStory.jpg"
     },
 
