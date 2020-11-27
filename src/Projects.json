@@ -7,6 +7,14 @@
         "image" : "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
 
     },
+    "The Clubhouse" :{
+        "name" : "The Clubhouse",
+        "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku, TailwindCSS",
+        "link" : "https://top-theclubhouse.herokuapp.com/",
+        "description" : "A full stack message board project with different levels of account privileges, and different conditional views rendered if a user has certain privileges. The project sanitizes and validates user input with Express Validator, and sends flash messages in the event of an error.",
+        "image" : "https://tatianacodes.s3-us-west-2.amazonaws.com/TheClubHouse.png"
+
+    },
     "Cherub 214" :{
         "name" : "Cherub 214 - Shopify Template",
         "link" : "",
