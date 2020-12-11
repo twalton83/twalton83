@@ -1,7 +1,7 @@
 {
    
     "mongodb" :{
-        "image": "mongodb-original-wordmark",
+        "image": "mongodb-original",
         "name" : "mongodb"
     },
     "express" :{
@@ -13,7 +13,7 @@
         "name" : "react"
     },
     "NodeJS" :{
-        "image": "nodejs-original-wordmark",
+        "image": "nodejs-original",
         "name" : "nodejs"
     },
     "bootstrap" : {

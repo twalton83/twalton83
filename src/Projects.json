@@ -3,7 +3,7 @@
         "name" : "Task.Me",
         "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
         "link" : "https://task-manager-twalton.herokuapp.com/",
-        "description" : "A full-stack task manager app. Think Asana. Complete with PassportJS local strategy log-in system.",
+        "description" : "A full-stack task manager app. The inspiration was Asana, a SaaS that I have used at multiple jobs. Authentication is currently handled with PassportJS local strategy log-in system. This project is currently being refactored to bring the stack up to include React as a replacement for EJS templates rendered server side. I will also include JWT to modernize the authentication/authorization. The repo for the client side refactor is linked in the README.",
         "image" : "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
 
     },
@@ -19,7 +19,7 @@
         "name" : "Cherub 214 - Shopify Template",
         "link" : "",
         "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
-        "description" : "A client project for a New York streetwear designer. This project leveraged Bootstrap 4.5, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client, and periodic updates have been included. Link currently not available.",
+        "description" : "A client project for a New York streetwear designer. This project leveraged Bootstrap 4.5, vanilla Javascript, some JQuery, and Liquid templating. The CSS was organized with BEM. Documentation was also written for the client, and periodic updates to remain consistent with Shopify's platform have been included. Link currently not available, but you may request to see the code so far.",
         "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/cherub214.myshopify.com_.png"
     },
     "Tender Gear" :{
@@ -34,7 +34,7 @@
         "name" : "Catalyst Roster Automation",
         "link" : "https://github.com/twalton83/Catalyst-Roster-Automation",
         "stack" : "Python 3, Selenium Webdriver, PyAutoGui",
-        "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder.",
+        "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder. This project was born out of frustration with the University's old .NET website that makes it difficult to download many things at once, and this script takes a job that takes 5 minutes too many of my time, and executes it in a 30 second or so job.",
         "image" : "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jpg"
     },
     "Genneya Walton" :{
