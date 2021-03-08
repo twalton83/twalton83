@@ -1,6 +1,5 @@
 ### She codes, she learns
 
-### Technologies and Languages
 ![Javascript](https://img.shields.io/badge/-javascript-000?&logo=javascript)
 ![React](https://img.shields.io/badge/-React-000?&logo=React)
 ![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
