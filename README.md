@@ -2,15 +2,14 @@
 
 ### Technologies and Languages
 ![Javascript](https://img.shields.io/badge/-javascript-000?&logo=javascript)
+![React](https://img.shields.io/badge/-React-000?&logo=React)
 ![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
 ![Express](https://img.shields.io/badge/-Express-000?&logo=Express)
-![React](https://img.shields.io/badge/-React-000?&logo=React)
 ![Vue](https://img.shields.io/badge/-Vue-000?&logo=Vue.js)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=MongoDB)
 ![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
 ![HTML](https://img.shields.io/badge/-HTML5-000?&logo=HTML5)
 ![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=CSS3)
-
 
 
 

@@ -1,49 +1,58 @@
 {
-    "Task.Me" :{
-        "name" : "Task.Me",
-        "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
-        "link" : "https://task-manager-twalton.herokuapp.com/",
-        "description" : "A full-stack task manager app. The inspiration was Asana, a SaaS that I have used at multiple jobs. Authentication is currently handled with PassportJS local strategy log-in system. This project is currently being refactored to bring the stack up to include React as a replacement for EJS templates rendered server side. I will also include JWT to modernize the authentication/authorization. The repo for the client side refactor is linked in the README.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
-
+    "Odin-Bot": {
+        "name": "Odin-Bot V2 Unit Tests and Refactor",
+        "stack": "NodeJS, Jest",
+        "link": "https://github.com/TheOdinProject/odin-bot-v2",
+        "description": "I contributed by way of adding unit tests to this open source project used by a Discord server of approximately 30,000. I lead a small team in implementing these tests, and was responsible for writing new documentation so contributors would have a clear and concise contributing guide, even if they themselves were unfamiliar with unit testing. Along the way, we realized that the original code was not easily testable, and I along with my teammates refactored the existing code so future contributors would have a cleaner way of setting up and testing commands.",
+        "image": "https://d2pry8dqxtkkrh.cloudfront.net/og-logo-003bdac3098010b4f1143000a941b80c67eebd74fbc6f36b2e7ef92dd03e8020.png"
     },
-    "The Clubhouse" :{
-        "name" : "The Clubhouse",
-        "stack" : "EJS, MongoDB Atlas, NodeJS, Express, Heroku, TailwindCSS",
-        "link" : "https://top-theclubhouse.herokuapp.com/",
-        "description" : "A full stack message board project with different levels of account privileges, and different conditional views rendered if a user has certain privileges. The project sanitizes and validates user input with Express Validator, and sends flash messages in the event of an error.",
-        "image" : "https://tatianacodes.s3-us-west-2.amazonaws.com/TheClubHouse.png"
-
+    "Task.Me - React": {
+        "name": "Task.Me - React Version",
+        "stack": "React, MaterialUI, React-Router",
+        "link": "https://task-me-client.herokuapp.com/",
+        "description": "This is a client-side only version of a task manager that leverages the Local Storage API to save tasks and projects. I used MaterialUI for styling, and mirrored the functionality and look from Asana. A user may choose unique colors to more easily find their projects, and the home screen offers a broad display of their pending projects and upcoming tasks.",
+        "image": "https://d2pry8dqxtkkrh.cloudfront.net/TaskMeClient"
     },
-    "Cherub 214" :{
-        "name" : "Cherub 214 - Shopify Template",
-        "link" : "",
-        "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
-        "description" : "A client project for a New York streetwear designer. This project leveraged Bootstrap 4.5, vanilla Javascript, some JQuery, and Liquid templating. The CSS was organized with BEM. Documentation was also written for the client, and periodic updates to remain consistent with Shopify's platform have been included. Link currently not available, but you may request to see the code so far.",
+    "Task.Me": {
+        "name": "Task.Me",
+        "stack": "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
+        "link": "https://task-manager-twalton.herokuapp.com/",
+        "description": "A full-stack task manager app. The inspiration was Asana, a SaaS that I have used at multiple jobs. Authentication is currently handled with PassportJS local strategy log-in system. This is the first iteration of the project as shown above.",
+        "image": "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
+    },
+    "The Clubhouse": {
+        "name": "The Clubhouse",
+        "stack": "EJS, MongoDB Atlas, NodeJS, Express, Heroku, TailwindCSS",
+        "link": "https://top-theclubhouse.herokuapp.com/",
+        "description": "A full stack message board project with different levels of account privileges, and different conditional views rendered if a user has certain privileges. The project sanitizes and validates user input with Express Validator, and sends flash messages in the event of an error.",
+        "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/TheClubHouse.png"
+    },
+    "Cherub 214": {
+        "name": "Cherub 214 - Shopify Template",
+        "link": "",
+        "stack": "HTML, CSS, Bootstrap, Sass, Liquid",
+        "description": "A client project for a New York streetwear designer. This project leveraged Bootstrap 4.5, vanilla Javascript, some JQuery, and Liquid templating. The CSS was organized with BEM. Documentation was also written for the client, and periodic updates to remain consistent with Shopify's platform have been included. Link currently not available, but you may request to see the code so far.",
         "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/cherub214.myshopify.com_.png"
     },
-    "Tender Gear" :{
-        "name" : "Tender Gear - Shopify Template",
-        "link" : "https://tender-gear-test-store.myshopify.com/",
-        "stack" : "HTML, CSS, Bootstrap, Sass, Liquid",
-        "description" : "A client project for a hockey related merchandise vendor. This project leveraged mostly plain CSS with Sass, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client. I periodically provide the client with updated versions as Shopify makes tools such as Sass deprecated on their platform. Use password: admin to access the store below.",
+    "Tender Gear": {
+        "name": "Tender Gear - Shopify Template",
+        "link": "https://tender-gear-test-store.myshopify.com/",
+        "stack": "HTML, CSS, Bootstrap, Sass, Liquid",
+        "description": "A client project for a hockey related merchandise vendor. This project leveraged mostly plain CSS with Sass, vanilla Javascript, some JQuery, and Liquid templating. Documentation was also written for the client. I periodically provide the client with updated versions as Shopify makes tools such as Sass deprecated on their platform. Use password: admin to access the store below.",
         "image": "https://tatianacodes.s3-us-west-2.amazonaws.com/OurStory.jpg"
     },
-
-    "Catalyst Roster Automation" :{
-        "name" : "Catalyst Roster Automation",
-        "link" : "https://github.com/twalton83/Catalyst-Roster-Automation",
-        "stack" : "Python 3, Selenium Webdriver, PyAutoGui",
-        "description" : "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder. This project was born out of frustration with the University's old .NET website that makes it difficult to download many things at once, and this script takes a job that takes 5 minutes too many of my time, and executes it in a 30 second or so job.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jpg"
+    "Catalyst Roster Automation": {
+        "name": "Catalyst Roster Automation",
+        "link": "https://github.com/twalton83/Catalyst-Roster-Automation",
+        "stack": "Python 3, Selenium Webdriver, PyAutoGui",
+        "description": "A Python script that logs in to university staff internal system, navigates browser, downloads files into a named and dated folder. This project was born out of frustration with the University's old .NET website that makes it difficult to download many things at once, and this script takes a job that takes 5 minutes too many of my time, and executes it in a 30 second or so job.",
+        "image": "https://d2pry8dqxtkkrh.cloudfront.net/PythonLogo.jpg"
     },
-    "Genneya Walton" :{
-        "name" : "GenneyaWalton.com",
-        "stack" : "HTML/CSS/JS/Bootstrap 4",
-        "link" : "https://genneyawalton.com/",
-        "description" : "Website for Netflix breakout star Genneya Walton of #BLACKAF and Project MC2.",
-        "image" : "https://d2pry8dqxtkkrh.cloudfront.net/genneyaWalton.jpg"
-
+    "Genneya Walton": {
+        "name": "GenneyaWalton.com",
+        "stack": "HTML/CSS/JS/Bootstrap 4",
+        "link": "https://genneyawalton.com/",
+        "description": "Website for Netflix breakout star Genneya Walton of #BLACKAF and Project MC2.",
+        "image": "https://d2pry8dqxtkkrh.cloudfront.net/genneyaWalton.jpg"
     }
-
 }
