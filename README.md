@@ -1,5 +1,6 @@
 ### She codes, she learns
 
+![Maintainer](https://img.shields.io/static/v1?label=maintainer&message=theodinproject&color=000)
 ![Javascript](https://img.shields.io/badge/-javascript-000?&logo=javascript)
 ![React](https://img.shields.io/badge/-React-000?&logo=React)
 ![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
