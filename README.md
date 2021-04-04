@@ -20,4 +20,4 @@ I'm a MERN stack web developer with a passion for learning. Forever wishing for 
 - 🛒 I am also a Shopify Partner/Theme Developer, and love to bring my clients onto the Shopify platform.
 - ⚡ Fun fact: I am a bit of a gamer, but I can't say I play anything incredibly interesting a la Fortnite, Warzone, Fall Guys, etc. I am more of a chill farming RPG type of girl. I just want to till my turnips, or fight Shadows in Mementos on a Saturday afternoon after spending my morning programming. 
 
-[![Tatiana's github stats](https://github-readme-stats.vercel.app/api?username=twalton83&show_icons=true&theme=cobalt&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Tatiana's github stats](https://github-readme-stats.vercel.app/api?username=twalton83&show_icons=true&theme=cobalt&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
