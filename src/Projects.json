@@ -13,13 +13,6 @@
         "description": "This is a client-side only version of a task manager that leverages the Local Storage API to save tasks and projects. I used MaterialUI for styling, and mirrored the functionality and look from Asana. A user may choose unique colors to more easily find their projects, and the home screen offers a broad display of their pending projects and upcoming tasks.",
         "image": "https://d2pry8dqxtkkrh.cloudfront.net/TaskMeClient"
     },
-    "Task.Me": {
-        "name": "Task.Me",
-        "stack": "EJS, MongoDB Atlas, NodeJS, Express, Heroku",
-        "link": "https://task-manager-twalton.herokuapp.com/",
-        "description": "A full-stack task manager app. The inspiration was Asana, a SaaS that I have used at multiple jobs. Authentication is currently handled with PassportJS local strategy log-in system. This is the first iteration of the project as shown above.",
-        "image": "https://d2pry8dqxtkkrh.cloudfront.net/TaskMe.jpg"
-    },
     "The Clubhouse": {
         "name": "The Clubhouse",
         "stack": "EJS, MongoDB Atlas, NodeJS, Express, Heroku, TailwindCSS",
