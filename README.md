@@ -1,6 +1,6 @@
 ### She codes, she learns
 
-![Maintainer](https://img.shields.io/static/v1?label=Maintainer+|Core&message=theodinproject&color=000)
+![Maintainer](https://img.shields.io/static/v1?label=Maintainer+|+Core&message=theodinproject&color=E3B360)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=typescript)
 ![React](https://img.shields.io/badge/-React-000?&logo=React)
 ![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
