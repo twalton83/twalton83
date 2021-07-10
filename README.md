@@ -1,7 +1,7 @@
 ### She codes, she learns
 
 ![Maintainer | Core](https://img.shields.io/static/v1?label=maintainer&message=theodinproject&color=000)
-![TypeScript](https://img.shields.io/badge/-typescript-000?&logo=typescript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=typescript)
 ![React](https://img.shields.io/badge/-React-000?&logo=React)
 ![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
 ![Express](https://img.shields.io/badge/-Express-000?&logo=Express)
@@ -10,7 +10,7 @@
 ![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
 ![HTML](https://img.shields.io/badge/-HTML5-000?&logo=HTML5)
 ![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=CSS3)
-![Javascript](https://img.shields.io/badge/-javascript-000?&logo=javascript)
+![Javascript](https://img.shields.io/badge/-JavaScript-000?&logo=javascript)
 
 
 I'm a full stack software engieer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
