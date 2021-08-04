@@ -20,4 +20,4 @@ I'm a full stack software engieer with a passion for learning. Forever wishing f
 - 🛒 I am also a Shopify Partner/Theme Developer, and love to bring my clients onto the Shopify platform.
 - ⚡ Fun fact: I am a major foodie 🍴 and have a running list of Michelin restaurants I want to go to with my amazing partner
 
-[![Tatiana's github stats](https://github-readme-stats.vercel.app/api?username=twalton83&show_icons=true&theme=cobalt&count_private=true&include_all_commits=false)](https://github.com/anuraghazra/github-readme-stats)
+[![Tatiana's github stats](https://github-readme-stats.vercel.app/api?username=twalton83&show_icons=true&theme=cobalt&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
