@@ -4,6 +4,8 @@ import AboutMe from './AboutMe';
 import Skillset from './Skillset';
 import Projects from './Projects'
 import Contact from './Contact';
+import AllPosts from './AllPosts';
+import SinglePost from './SinglePost';
 import {withStyles} from '@material-ui/core/styles'
 
 const styles = theme => ({
@@ -15,17 +17,18 @@ const styles = theme => ({
 
 class Router extends Component {
     render() {
-        const {classes} = this.props
         return (
-            <div>
-                <Switch>
-                    <Route exact path = "/" render= {() => <AboutMe/>}/>
-                    <Route exact path = "/projects" render= {()=><Projects/>}/>
-                    <Route exact path = "/skills" render= {()=><Skillset/>}/>
-                    <Route exact path = "/contact" render= {()=><Contact/>}/>
-                </Switch>
-            </div>
-        )
+          <div>
+            <Switch>
+              <Route exact path="/" render={() => <AboutMe />} />
+              <Route exact path="/projects" render={() => <Projects />} />
+              <Route exact path="/skills" render={() => <Skillset />} />
+              <Route exact path="/contact" render={() => <Contact />} />
+              <Route component={AllPosts} path="/blog" exact />
+              <Route component={SinglePost} path="/blog/:slug" />
+            </Switch>
+          </div>
+        );
     }
 }
 
