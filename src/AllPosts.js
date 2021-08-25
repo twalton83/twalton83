@@ -9,13 +9,13 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
-import { classes } from "istanbul-lib-coverage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "100%",
     margin: "1rem",
     boxShadow: "0px 7px 10px rgba(0,0,0,0.5)",
+    minHeight: "33%",
   },
   media: {
     height: 50,
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   link: {
-    textDecoration: "none",
+    textDecoration: "none !important",
     color: "#FFFFFF",
     "&:visited": {
       color: "#FFFFFF",
@@ -76,20 +76,35 @@ export default function AllPosts() {
         allPostsData.map((post, index) => (
           <Grid item xs={12} md={8} key={post.slug.current}>
             <Card className={classes.root}>
-              <CardHeader title={post.slug.current} />
-              <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
-                <span key={index}>
-                  {post.mainImage && (
-                    <img src={post.mainImage.asset.url} alt="" />
-                  )}
-                  {post.mainImage && (
-                    <CardMedia image={post.mainImage.asset.url} />
-                  )}
-                  <span>
-                    <h2>Read More</h2>
+              <CardHeader title={post.title} />
+              {post.mainImage && (
+                <CardMedia
+                  className={classes.media}
+                  image={post.mainImage.asset.url}
+                />
+              )}
+              <CardContent>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  to={"/blog/" + post.slug.current}
+                  key={post.slug.current}
+                >
+                  <span key={index}>
+                    <Button className={classes.button}>
+                      <a
+                        className={classes.link}
+                        href={"/blog/" + post.slug.current}
+                        aria-label="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        Read More
+                      </a>
+                    </Button>
                   </span>
-                </span>
-              </Link>
+                </Link>
+              </CardContent>
             </Card>
           </Grid>
         ))}

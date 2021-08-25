@@ -3,6 +3,32 @@ import { useParams } from "react-router-dom";
 import sanityClient from "./client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import {
+  Card,
+  CardHeader,
+  CardMedia,
+  CardContent,
+  Typography,
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import { Grid } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: "16px",
+    margin: "2rem",
+    boxShadow: "0px 7px 10px rgba(0,0,0,0.5)",
+    marginBottom: "200px",
+  },
+  text: {
+    textAlign: "left",
+  },
+  image: {
+    maxWidth: "100%",
+    width: "auto",
+    maxHeight: "40vh",
+  },
+}));
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -12,6 +38,7 @@ function urlFor(source) {
 export default function SinglePost() {
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
+  const classes = useStyles();
 
   useEffect(() => {
     sanityClient
@@ -38,25 +65,23 @@ export default function SinglePost() {
   if (!postData) return <div>Loading...</div>;
 
   return (
-    <div>
-      <div>
-        <h2>{postData.title}</h2>
-        <div>
-          <img
-            src={urlFor(postData.authorImage).width(100).url()}
-            alt="Author is Kap"
-          />
-          <h4>{postData.name}</h4>
-        </div>
-      </div>
-      <img src={urlFor(postData.mainImage).width(200).url()} alt="" />
-      <div>
-        <BlockContent
-          blocks={postData.body}
-          projectId={sanityClient.clientConfig.projectId}
-          dataset={sanityClient.clientConfig.dataset}
+    <Grid item xs={12} md={12}>
+      <Card className={classes.root}>
+        <CardHeader title={postData.title} />
+        <img
+          className={classes.image}
+          src={urlFor(postData.mainImage).url()}
+          alt=""
         />
-      </div>
-    </div>
+        <CardContent>
+          <BlockContent
+            className={classes.text}
+            blocks={postData.body}
+            projectId={sanityClient.clientConfig.projectId}
+            dataset={sanityClient.clientConfig.dataset}
+          />
+        </CardContent>
+      </Card>
+    </Grid>
   );
 }

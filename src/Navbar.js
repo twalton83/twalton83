@@ -195,7 +195,7 @@ export default function Navbar(props) {
               <NavLink
                 className={classes.NavLink}
                 exact
-                to="skills"
+                to="/skills"
                 activeClassName={classes.ActiveNavLink}
               >
                 Skills
@@ -205,7 +205,7 @@ export default function Navbar(props) {
               <NavLink
                 className={classes.NavLink}
                 exact
-                to="projects"
+                to="/projects"
                 activeClassName={classes.ActiveNavLink}
               >
                 Projects
@@ -215,7 +215,7 @@ export default function Navbar(props) {
               <NavLink
                 className={classes.NavLink}
                 exact
-                to="blog"
+                to="/blog"
                 activeClassName={classes.ActiveNavLink}
               >
                 Blog
@@ -223,7 +223,7 @@ export default function Navbar(props) {
             </Typography>
 
             <ColorButton>
-              <NavLink exact to="contact">
+              <NavLink exact to="/contact">
                 Contact Me
               </NavLink>
             </ColorButton>
