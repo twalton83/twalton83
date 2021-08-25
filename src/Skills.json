@@ -1,50 +1,51 @@
 {
-   
-    "mongodb" :{
-        "image": "mongodb-original",
-        "name" : "mongodb"
-    },
-    "express" :{
-        "image": "express-original-wordmark",
-        "name" : "express"
-    },
-    "react" :{
-        "image": "react-original",
-        "name" : "react"
-    },
-    "NodeJS" :{
-        "image": "nodejs-original",
-        "name" : "nodejs"
-    },
-    "bootstrap" : {
-        "image": "bootstrap-plain",
-        "name":"bootstrap"
+  "mongodb": {
+    "image": "mongodb-original",
+    "name": "mongodb"
+  },
+  "express": {
+    "image": "express-original-wordmark",
+    "name": "express"
+  },
+  "react": {
+    "image": "react-original",
+    "name": "react"
+  },
+  "NodeJS": {
+    "image": "nodejs-original",
+    "name": "nodejs"
+  },
+  "TypeScript": {
+    "image": "typescript-original",
+    "name": "typescript"
+  },
+  "bootstrap": {
+    "image": "bootstrap-plain",
+    "name": "bootstrap"
+  },
+  "HTML5": {
+    "image": "html5-original-wordmark",
+    "name": "html5"
+  },
+  "CSS3": {
+    "image": "css3-original-wordmark",
+    "name": "CSS3"
+  },
+  "javascript": {
+    "image": "javascript-original",
+    "name": "javascript"
+  },
+  "Sass": {
+    "image": "sass-original",
+    "name": "sass"
+  },
 
-    },
-    "HTML5" :{
-        "image": "html5-original-wordmark",
-        "name" : "html5"
-    },
-    "CSS3" :{
-        "image": "css3-original-wordmark",
-        "name" : "CSS3"
-    },
-    "javascript" :{
-        "image": "javascript-original",
-        "name" : "javascript"
-    },
-    "Sass" :{
-        "image": "sass-original",
-        "name" : "sass"
-    },
-   
-    "Git" :{
-        "image": "git-original-wordmark",
-        "name" : "git"
-    },
-    "Heroku" :{
-        "image": "heroku-original-wordmark",
-        "name" : "heroku"
-    }
-
+  "Git": {
+    "image": "git-original-wordmark",
+    "name": "git"
+  },
+  "Heroku": {
+    "image": "heroku-original-wordmark",
+    "name": "heroku"
+  }
 }
