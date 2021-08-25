@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     padding: "16px",
     margin: "2rem",
     boxShadow: "0px 7px 10px rgba(0,0,0,0.5)",
-    marginBottom: "200px",
   },
   text: {
     textAlign: "left",

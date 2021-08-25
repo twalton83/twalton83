@@ -12,6 +12,7 @@ const styles = (theme) => ({
   Router: {
     width: "100%",
     height: "90vh",
+    paddingBottom: "1rem",
   },
 });
 
