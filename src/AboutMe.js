@@ -84,7 +84,7 @@ class AboutMe extends Component {
             component="h2"
             align="left"
           >
-            Full Stack Developer and Shopify Partner
+            Software Engineer
           </Typography>
           <Typography
             className={classes.AboutMeParagraph}
@@ -92,7 +92,7 @@ class AboutMe extends Component {
             paragraph={true}
             variant="body1"
           >
-            I'm Tatiana, a software Engineer @ Lever with a speciality in
+            I'm Tatiana, a Software Engineer @ Lever with a speciality in
             MongoDB, Express, React, and Node. I serve as a Core Maintainer for
             The Odin Project, an open source web development bootcamp that
             garners hundreds of thousands of unique visitors yearly. I am also a
@@ -106,10 +106,12 @@ class AboutMe extends Component {
             paragraph={true}
             variant="body1"
           >
-            During my time at both Lever and a Maintainer for The Odin Project,
-            I've worked in a team-based development environment and gained
+            During my time at both Lever and as a Maintainer for The Odin
+            Project, I've worked in a agile development environment and gained
             ownership of particular features and projects. I have bashed bugs
-            impacting some of our largest customers!
+            impacting some of our largest customers at work, and rolled out
+            features impacting tens of thousands of users in The Odin Project
+            community!
           </Typography>
           <Button className={classes.button} endIcon={<NavigateNextIcon />}>
             <Link exact to="projects">
