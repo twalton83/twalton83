@@ -15,9 +15,9 @@
 
 I'm a full stack software engieer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
 
-- 🌱 I’m currently working as a software engineer at [Lever](https://www.lever.co/), an awesome company that builds products that aim to develop genuine relationships with recruitment candidates
-- React ⚛️ has my heart, but Vue has become a close second. I like to try a lot of different things and have breadth of knowledge.
-- 🛒 I am also a Shopify Partner/Theme Developer, and love to bring my clients onto the Shopify platform.
-- ⚡ Fun fact: I am a major foodie 🍴 and have a running list of Michelin restaurants I want to go to with my amazing partner
+- 🌱 I’m currently working as a software engineer at [Lever](https://www.lever.co/), an awesome company that builds an end-to-end talent acquisition platform
+- React ⚛️ has my heart. But Vue and I are starting to be friends.
+- 🛒 I am also a Shopify Partner/Theme Developer (although I am currently not taking clients)
+- ⚡ Fun fact: I am a major foodie 🍴 and have very strong opinions about cheese. 🧀
 
 [![Tatiana's github stats](https://github-readme-stats.vercel.app/api?username=twalton83&show_icons=true&theme=cobalt&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
