@@ -13,7 +13,7 @@
 ![Javascript](https://img.shields.io/badge/-JavaScript-000?&logo=javascript)
 
 
-I'm a full stack software engieer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
+I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
 
 - 🌱 I’m currently working as a software engineer at [Lever](https://www.lever.co/), an awesome company that builds an end-to-end talent acquisition platform
 - React ⚛️ has my heart. But Vue and I are starting to be friends.
