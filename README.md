@@ -1,22 +1,26 @@
-### She codes, she learns
+## She codes, she learns
 
-![Maintainer](https://img.shields.io/static/v1?label=Maintainer+|+Core&message=The+Odin+Project&logoColor=E3B360&color=000)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=typescript)
-![React](https://img.shields.io/badge/-React-000?&logo=React)
-![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
-![Express](https://img.shields.io/badge/-Express-000?&logo=Express)
-![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=MongoDB)
-![HTML](https://img.shields.io/badge/-HTML5-000?&logo=HTML5)
-![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=CSS3)
-![Javascript](https://img.shields.io/badge/-JavaScript-000?&logo=javascript)
-![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
+![Maintainer](https://img.shields.io/static/v1?label=Maintainer+|+Core&message=The+Odin+Project&color=E3B360&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+<br>
+<img src="https://img.shields.io/badge/javascript%20-%23F0DB4F.svg?&style=for-the-badge&logo=javascript&logoColor=white" />&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/mongodb%20-%234DB33D.svg?&style=for-the-badge&logo=mongodb&logoColor=white" />&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/express%20-%2368a063.svg?&style=for-the-badge&logo=express&logoColor=white" />&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/node.js%20-%233c873a.svg?&style=for-the-badge&logo=node.js&logoColor=white" />&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/react%20-%2300D9FF.svg?&style=for-the-badge&logo=react&logoColor=white" />&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/TypeScript%20-%23007acc.svg?&style=for-the-badge&logo=typescript&logoColor=white" />&nbsp;&nbsp;&nbsp;
 
 
-I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
+I'm a full stack software engineer @ Lever with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
 
 - 🌱 I’m currently working as a software engineer at [Lever](https://www.lever.co/), an awesome company that builds an end-to-end talent relationship management platform
-- React ⚛️ has my heart. 
-- 🛒 I am also a Shopify Partner/Theme Developer (although I am currently not taking clients)
+- React ⚛️ has my heart, but I'm open to new tools. 
 - ⚡ Fun fact: I am a major foodie 🍴 and have very strong opinions about cheese. 🧀
-
-[![Tatiana's github stats](https://github-readme-stats-black-pi.vercel.app/api?username=twalton83&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
+<p align="center">
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img title="Github Stats" alt="DenverCoder1's streak" src="https://github-readme-stats-black-pi.vercel.app/api?username=twalton83&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true"/>
+  </a>
+<p align="center">
+   <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img title="Github Stats" alt="DenverCoder1's streak" src="https://github-readme-stats.vercel.app/api/top-langs/?username=twalton83&show_icons=true&theme=tokyonight&layout=compact&hide=html,css,shell&langs_count=8"/>
+  </a>
+</p>
