@@ -13,7 +13,7 @@
 I'm a full stack software engineer @ Lever with a passion for learning. Forever wishing for just a few more hours in the day to check out something new.
 
 - 🌱 I’m currently working as a software engineer at [Lever](https://www.lever.co/), an awesome company that builds an end-to-end talent relationship management platform
-- React ⚛️ has my heart, but I'm open to new tools. 
+- React ⚛️ has my heart, but I'm open to new tools. I'm currently learning Golang and Solidity. 
 - ⚡ Fun fact: I am a major foodie 🍴 and have very strong opinions about cheese. 🧀
 <p align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats">
