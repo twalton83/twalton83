@@ -92,8 +92,8 @@ class AboutMe extends Component {
             paragraph={true}
             variant="body1"
           >
-            I'm Tatiana, a Software Engineer @ Lever with a speciality in
-            MongoDB, Express, React, and Node. I serve as a Core Maintainer for
+            I'm Tatiana, a Software Engineer @ Streamlabs by Logitech with a speciality in
+            MongoDB, Express, React, Vue, and Node. I previously served as a Core Maintainer for
             The Odin Project, an open source web development bootcamp that
             garners hundreds of thousands of unique visitors yearly. I am also a
             certified Shopify Partner with experience in creating Liquid
