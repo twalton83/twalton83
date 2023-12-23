@@ -1,11 +1,13 @@
 ## She codes, she learns
 
+<img src="https://img.shields.io/badge/TypeScript%20-%23007acc.svg?&style=for-the-badge&logo=typescript&logoColor=white" />&nbsp;&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/javascript%20-%23F0DB4F.svg?&style=for-the-badge&logo=javascript&logoColor=white" />&nbsp;&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/mongodb%20-%234DB33D.svg?&style=for-the-badge&logo=mongodb&logoColor=white" />&nbsp;&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/express%20-%2368a063.svg?&style=for-the-badge&logo=express&logoColor=white" />&nbsp;&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/node.js%20-%233c873a.svg?&style=for-the-badge&logo=node.js&logoColor=white" />&nbsp;&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/react%20-%2300D9FF.svg?&style=for-the-badge&logo=react&logoColor=white" />&nbsp;&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/TypeScript%20-%23007acc.svg?&style=for-the-badge&logo=typescript&logoColor=white" />&nbsp;&nbsp;&nbsp;
+<img src ="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" />&nbsp;&nbsp;&nbsp;
+
 
 
 I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new. Currently working on tools for streamers @ Streamlabs by Logitech! In my spare time, I'm learning C# and Solana development.
