@@ -84,7 +84,7 @@ class AboutMe extends Component {
             component="h2"
             align="left"
           >
-            Software Engineer
+            Software Engineer and Speaker
           </Typography>
           <Typography
             className={classes.AboutMeParagraph}
@@ -93,11 +93,9 @@ class AboutMe extends Component {
             variant="body1"
           >
             I'm Tatiana, a Software Engineer @ Streamlabs by Logitech with a speciality in
-            MongoDB, Express, React, Vue, and Node. I previously served as a Core Maintainer for
+            MongoDB, Express, React, Vue, and Node. I have a strong interest in testing, and love to make testing suites go green. I previously served as a Core Maintainer for
             The Odin Project, an open source web development bootcamp that
-            garners hundreds of thousands of unique visitors yearly. I am also a
-            certified Shopify Partner with experience in creating Liquid
-            templates with Theme Kit. I am a life-long learner and eager to pick
+            garners hundreds of thousands of unique visitors yearly. I am a life-long learner and eager to pick
             up new technologies just for the fun of it.
           </Typography>
           <Typography
