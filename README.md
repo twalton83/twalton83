@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/TypeScript%20-%23007acc.svg?&style=for-the-badge&logo=typescript&logoColor=white" />&nbsp;&nbsp;&nbsp;
 
 
-I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new. Currently working on tools for streamers @ Streamlabs by Logitech! 
+I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new. Currently working on tools for streamers @ Streamlabs by Logitech! In my spare time, I'm learning C# and Solana development.
 
 <p align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats">
