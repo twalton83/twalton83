@@ -10,7 +10,7 @@
 
 
 
-I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new. Currently working on tools for streamers @ Streamlabs by Logitech! In my spare time, I'm learning C# and Solana development.
+I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new. Currently working on tools for streamers @ Streamlabs by Logitech! I approach code with a steward intent, leave it better than I found it, and protect that quality with all I have. I love testing and all that comes with it! 
 
 <p align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats">
