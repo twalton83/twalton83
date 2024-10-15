@@ -11,11 +11,6 @@
 
 
 I'm a full stack software engineer with a passion for learning. Forever wishing for just a few more hours in the day to check out something new. Currently working on tools for streamers @ Streamlabs by Logitech! I approach code with a steward intent, leave it better than I found it, and protect that quality with all I have. I love testing and all that comes with it! 
-
-<p align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img title="Github Stats" alt="DenverCoder1's streak" src="https://github-readme-stats-black-pi.vercel.app/api?username=twalton83&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true"/>
-  </a>
 <p align="center">
    <a href="https://github.com/anuraghazra/github-readme-stats">
     <img title="Github Stats" alt="DenverCoder1's streak" src="https://github-readme-stats.vercel.app/api/top-langs/?username=twalton83&show_icons=true&theme=tokyonight&layout=compact&hide=html,css,shell&langs_count=8"/>
