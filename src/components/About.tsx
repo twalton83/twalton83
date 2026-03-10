@@ -83,7 +83,7 @@ export default function About() {
 
         {/* Tech stack marquee */}
         <div className="mt-20">
-          <Marquee items={techStack} speed={80} />
+          <Marquee items={techStack} speed={150} />
         </div>
       </div>
     </section>

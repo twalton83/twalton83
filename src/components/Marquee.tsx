@@ -45,10 +45,6 @@ export default function Marquee({ items, speed = 60 }: MarqueeProps) {
       ease: 'none',
       repeat: -1,
     });
-
-    // Respect reduced motion
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (mq.matches) tweenRef.current.pause();
   }, [speed]);
 
   useEffect(() => {
@@ -56,19 +52,11 @@ export default function Marquee({ items, speed = 60 }: MarqueeProps) {
     if (document.fonts?.ready) {
       document.fonts.ready.then(createTween);
     } else {
-      // Fallback: wait a frame for layout
       requestAnimationFrame(createTween);
     }
 
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const handler = (e: MediaQueryListEvent) => {
-      e.matches ? tweenRef.current?.pause() : tweenRef.current?.play();
-    };
-    mq.addEventListener('change', handler);
-
     return () => {
       tweenRef.current?.kill();
-      mq.removeEventListener('change', handler);
     };
   }, [createTween]);
 
