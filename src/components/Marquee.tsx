@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useCallback } from 'react';
 import gsap from 'gsap';
 
 interface MarqueeProps {
@@ -10,23 +10,36 @@ interface MarqueeProps {
 
 export default function Marquee({ items, speed = 60 }: MarqueeProps) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const tweenRef = useRef<gsap.core.Tween | null>(null);
 
-  useEffect(() => {
+  const createTween = useCallback(() => {
     const track = trackRef.current;
     if (!track) return;
 
-    // Measure the width of the first set of items (half the track)
-    const firstSet = track.children.length / 2;
-    let setWidth = 0;
-    for (let i = 0; i < firstSet; i++) {
-      const child = track.children[i] as HTMLElement;
-      setWidth += child.offsetWidth;
-    }
-    // Account for gaps (3rem = 48px per gap, between items)
-    const gap = parseFloat(getComputedStyle(track).columnGap) || 48;
-    setWidth += gap * firstSet; // gap after each item including between sets
+    // Kill any existing tween
+    tweenRef.current?.kill();
+    gsap.set(track, { x: 0 });
 
-    const tween = gsap.to(track, {
+    // Measure the first set of items by using a wrapper
+    const children = Array.from(track.children) as HTMLElement[];
+    const half = children.length / 2;
+    let setWidth = 0;
+    for (let i = 0; i < half; i++) {
+      const el = children[i];
+      const style = getComputedStyle(el);
+      setWidth += el.offsetWidth
+        + parseFloat(style.marginLeft)
+        + parseFloat(style.marginRight);
+    }
+
+    // Add gaps: gap-12 = 3rem. Measure from the track itself.
+    const trackStyle = getComputedStyle(track);
+    const gap = parseFloat(trackStyle.gap) || parseFloat(trackStyle.columnGap) || 48;
+    setWidth += gap * half;
+
+    if (setWidth <= 0) return;
+
+    tweenRef.current = gsap.to(track, {
       x: -setWidth,
       duration: speed,
       ease: 'none',
@@ -35,23 +48,29 @@ export default function Marquee({ items, speed = 60 }: MarqueeProps) {
 
     // Respect reduced motion
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (mq.matches) tween.pause();
+    if (mq.matches) tweenRef.current.pause();
+  }, [speed]);
+
+  useEffect(() => {
+    // Wait for fonts before measuring
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(createTween);
+    } else {
+      // Fallback: wait a frame for layout
+      requestAnimationFrame(createTween);
+    }
+
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
     const handler = (e: MediaQueryListEvent) => {
-      e.matches ? tween.pause() : tween.play();
+      e.matches ? tweenRef.current?.pause() : tweenRef.current?.play();
     };
     mq.addEventListener('change', handler);
 
     return () => {
-      tween.kill();
+      tweenRef.current?.kill();
       mq.removeEventListener('change', handler);
     };
-  }, [speed]);
-
-  const content = items.map((item, i) => (
-    <span key={i} className="mono-tag whitespace-nowrap">
-      {item}
-    </span>
-  ));
+  }, [createTween]);
 
   return (
     <div className="overflow-hidden py-8 w-full">
@@ -59,8 +78,16 @@ export default function Marquee({ items, speed = 60 }: MarqueeProps) {
         ref={trackRef}
         className="flex gap-12 w-max"
       >
-        {content}
-        {content}
+        {items.map((item, i) => (
+          <span key={`a-${i}`} className="mono-tag whitespace-nowrap">
+            {item}
+          </span>
+        ))}
+        {items.map((item, i) => (
+          <span key={`b-${i}`} className="mono-tag whitespace-nowrap">
+            {item}
+          </span>
+        ))}
       </div>
     </div>
   );
