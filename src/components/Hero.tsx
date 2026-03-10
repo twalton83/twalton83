@@ -187,8 +187,8 @@ export default function Hero() {
         {/* Tagline */}
         <div ref={taglineRef} className="max-w-3xl mb-10" style={{ opacity: 0 }}>
           <p className="text-xl md:text-2xl lg:text-3xl text-[var(--text-secondary)] leading-relaxed">
-            I build{' '}
-            <span className="text-[var(--text-primary)]">products</span> people actually want to use,
+            I love to build{' '}
+            <span className="text-[var(--text-primary)]">products</span> I actually love to use,
             and make sure the teams behind them can{' '}
             <span className="text-[var(--text-primary)]">ship with speed</span> and{' '}
             <span className="text-[var(--text-primary)]">confidence</span>.
