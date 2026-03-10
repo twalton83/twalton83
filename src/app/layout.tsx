@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Tatiana Walton | Sr. Software Engineer | Product Builder | DX & Tooling",
   description:
-    "Sr. Software Engineer and Product Builder specializing in developer experience, tooling, CI/CD, and creative technology. Building products people actually want to use.",
+    "Sr. Software Engineer and Product Builder specializing in developer experience, tooling, CI/CD, and creative technology. Building products I actually love to use.",
   keywords: [
     "Software Engineer",
     "Product Builder",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tatiana Walton | Sr. Software Engineer | Product Builder",
     description:
-      "Building products people actually want to use, and making sure teams ship with speed and confidence.",
+      "Building products I actually love to use, and making sure teams ship with speed and confidence.",
     type: "website",
     locale: "en_US",
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tatiana Walton | Sr. Software Engineer",
     description:
-      "Product Builder & DX Enthusiast. Building products people actually want to use.",
+      "Product Builder & DX Enthusiast. Building products I actually love to use.",
   },
   robots: {
     index: true,
