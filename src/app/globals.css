@@ -244,11 +244,16 @@
   gap: 3rem;
   width: max-content;
   animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track > * {
+  flex-shrink: 0;
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 /* Reduced motion */

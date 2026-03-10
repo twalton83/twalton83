@@ -16,7 +16,7 @@ export default function Marquee({ items, speed = 30 }: MarqueeProps) {
   ));
 
   return (
-    <div className="overflow-hidden py-8">
+    <div className="overflow-hidden py-8 w-full">
       <div
         className="marquee-track"
         style={{ animationDuration: `${speed}s` }}
