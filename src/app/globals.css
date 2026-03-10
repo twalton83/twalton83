@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+:root {
+    /* Colors - Midnight Streetwear */
+    --bg-primary: #09090b;
+    --bg-secondary: #18181b;
+    --bg-tertiary: #27272a;
+    --bg-elevated: #3f3f46;
+
+    /* Accent - Indigo + Ice Blue */
+    --accent-primary: #6366f1;
+    --accent-secondary: #38bdf8;
+    --accent-glow: rgba(99, 102, 241, 0.3);
+
+    /* Text */
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+
+    /* Typography */
+    --font-display: var(--font-space-grotesk), sans-serif;
+    --font-body: var(--font-dm-sans), sans-serif;
+    --font-mono: var(--font-jetbrains-mono), monospace;
+
+    /* Spacing */
+    --section-padding: clamp(4rem, 8vw, 7rem);
+
+    /* Transitions */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-primary) var(--bg-secondary);
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+  ::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent-secondary); }
+
+  ::selection {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: var(--font-body);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Section spacing — the key rule for breathing room */
+  section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+  }
+
+/* ========== COMPONENTS (outside @layer so they always win) ========== */
+
+/* Noise Overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 128 128' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}
+
+/* Accent Text */
+.gradient-text {
+  color: var(--accent-primary);
+}
+
+/* Glow Effect */
+.glow {
+  box-shadow: 0 0 40px var(--accent-glow), 0 0 80px var(--accent-glow);
+}
+
+.glow-text {
+  text-shadow: 0 0 40px var(--accent-glow);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+/* Magnetic button */
+.magnetic-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.4s var(--ease-out-expo);
+  overflow: hidden;
+}
+
+.magnetic-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-primary);
+  transform: translateY(100%);
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.magnetic-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+.magnetic-btn:hover::before {
+  transform: translateY(0);
+}
+
+.magnetic-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Animated underline */
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.animated-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Grid lines background */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Fade mask */
+.fade-mask-bottom {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Responsive typography */
+.text-hero {
+  font-size: clamp(3rem, 15vw, 12rem);
+  line-height: 0.9;
+}
+
+.text-section {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.text-large {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.5;
+}
+
+/* Mono tag — streetwear product label */
+.mono-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--bg-tertiary);
+  color: var(--text-secondary);
+  transition: all 0.3s var(--ease-out-expo);
+}
+
+.mono-tag:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-secondary);
+}
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .marquee-track {
+    animation: none;
+  }
+}
+
