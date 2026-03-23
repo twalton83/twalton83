@@ -69,14 +69,6 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
       <body className="antialiased">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EPQY8TGLC0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EPQY8TGLC0');
-</script>
         <SmoothScroll>
           <Navigation />
           <div className="noise-overlay" />
