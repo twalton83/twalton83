@@ -69,7 +69,6 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
       <body className="antialiased">
-        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPQY8TGLC0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
