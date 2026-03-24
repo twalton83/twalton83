@@ -128,7 +128,7 @@ export default function Experience() {
             as="h2"
             className="text-section font-bold"
           >
-            Where I have built things
+            The journey so far
           </TextReveal>
 
           <p className="text-[var(--text-secondary)] text-lg mt-4 max-w-2xl">

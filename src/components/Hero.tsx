@@ -26,6 +26,7 @@ export default function Hero() {
   const nameRef = useRef<HTMLHeadingElement>(null);
   const taglineRef = useRef<HTMLDivElement>(null);
   const tagsRef = useRef<HTMLDivElement>(null);
+  const introRef = useRef<HTMLSpanElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const scrollHintRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +38,12 @@ export default function Hero() {
   useGSAP(() => {
     if (!containerRef.current) return;
 
+    // Hide noise overlay during entrance to reduce compositing cost
+    const noiseOverlay = document.querySelector('.noise-overlay');
+    if (noiseOverlay) {
+      gsap.set(noiseOverlay, { opacity: 0 });
+    }
+
     const tl = gsap.timeline({ delay: 0.3 });
 
     // Horizontal line draw
@@ -45,6 +52,16 @@ export default function Hero() {
         lineRef.current,
         { scaleX: 0 },
         { scaleX: 1, duration: 0.8, ease: 'power3.inOut' }
+      );
+    }
+
+    // Intro text
+    if (introRef.current) {
+      tl.fromTo(
+        introRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' },
+        '-=0.3'
       );
     }
 
@@ -61,6 +78,10 @@ export default function Hero() {
           duration: 0.6,
           stagger: 0.03,
           ease: 'power3.out',
+          force3D: true,
+          onComplete: () => {
+            gsap.set(chars, { clearProps: 'transform,willChange' });
+          },
         },
         '-=0.3'
       );
@@ -114,6 +135,11 @@ export default function Hero() {
       );
     }
 
+    // Fade noise overlay back in after entrance animations
+    if (noiseOverlay) {
+      tl.to(noiseOverlay, { opacity: 0.02, duration: 0.5 });
+    }
+
     // ScrollTrigger parallax fade-out
     const heroContent = containerRef.current.querySelector('.hero-content');
     if (heroContent) {
@@ -125,8 +151,8 @@ export default function Hero() {
           ease: 'none',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: 'top top',
-            end: '60% top',
+            start: '25% top',
+            end: '75% top',
             scrub: 0.5,
           },
         }
@@ -139,7 +165,7 @@ export default function Hero() {
       <span
         key={i}
         className="char inline-block"
-        style={{ perspective: '400px' }}
+        style={{ opacity: 0 }}
       >
         {char}
       </span>
@@ -165,8 +191,9 @@ export default function Hero() {
         {/* Intro */}
         <div className="mb-6">
           <span
+            ref={introRef}
             className="text-sm uppercase tracking-[0.3em] text-[var(--text-muted)]"
-            style={{ fontFamily: 'var(--font-mono)' }}
+            style={{ fontFamily: 'var(--font-mono)', opacity: 0 }}
           >
             Sr. Software Engineer
           </span>
@@ -188,20 +215,20 @@ export default function Hero() {
         <div ref={taglineRef} className="max-w-3xl mb-10" style={{ opacity: 0 }}>
           <p className="text-xl md:text-2xl lg:text-3xl text-[var(--text-secondary)] leading-relaxed">
             I love to build{' '}
-            <span className="text-[var(--text-primary)]">products</span> I actually love to use,
+            <span className="text-[var(--text-primary)]">products</span> I feel passionate about,
             and make sure the teams behind them can{' '}
             <span className="text-[var(--text-primary)]">ship with speed</span> and{' '}
             <span className="text-[var(--text-primary)]">confidence</span>.
           </p>
           <p className="text-lg md:text-xl text-[var(--text-muted)] mt-6">
-            Creative Technologist &middot; NYC
+            Senior Software Engineer &middot; NYC
           </p>
         </div>
 
         {/* Tags — streetwear product labels */}
         <div ref={tagsRef} className="flex flex-wrap gap-3 mb-16">
           {tags.map((tag) => (
-            <span key={tag} className="mono-tag">
+            <span key={tag} className="mono-tag" style={{ fontFamily: 'var(--font-syne), sans-serif', opacity: 0 }}>
               {tag}
             </span>
           ))}

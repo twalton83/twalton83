@@ -53,10 +53,10 @@ function WireSphere() {
       float edge = 1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0)));
       edge = pow(edge, 1.5);
 
-      // Muted silver-cyan
-      vec3 baseColor = mix(vec3(0.55, 0.65, 0.75), vec3(0.4, 0.55, 0.7), edge);
+      // Silver-cyan with indigo accent
+      vec3 baseColor = mix(vec3(0.6, 0.7, 0.85), vec3(0.45, 0.5, 0.9), edge);
 
-      float alpha = 0.06 + edge * 0.25;
+      float alpha = 0.12 + edge * 0.35;
 
       gl_FragColor = vec4(baseColor, alpha);
     }
@@ -93,7 +93,7 @@ function WireSphere() {
 
 export default function HeroScene() {
   return (
-    <div className="absolute inset-0 z-0 opacity-50">
+    <div className="absolute inset-0 z-0 opacity-70">
       <Suspense fallback={null}>
         <Canvas
           camera={{ position: [0, 0, 5], fov: 45 }}

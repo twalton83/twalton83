@@ -28,21 +28,16 @@ export default function Navigation() {
     if (!headerRef.current || !progressRef.current) return;
 
     // Entrance
-    gsap.from(headerRef.current, {
-      y: -100,
-      duration: 0.8,
-      ease: 'power3.out',
-    });
+    gsap.fromTo(headerRef.current,
+      { y: -100 },
+      { y: 0, duration: 0.8, ease: 'power3.out' }
+    );
 
     const navLinks = headerRef.current.querySelectorAll('.nav-link');
-    gsap.from(navLinks, {
-      opacity: 0,
-      y: -20,
-      duration: 0.5,
-      stagger: 0.1,
-      delay: 0.3,
-      ease: 'power2.out',
-    });
+    gsap.fromTo(navLinks,
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, delay: 0.3, ease: 'power2.out' }
+    );
 
     // Show/hide on scroll direction
     let lastScroll = 0;
@@ -110,6 +105,7 @@ export default function Navigation() {
       <header
         ref={headerRef}
         className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12"
+        style={{ transform: 'translateY(-100px)' }}
       >
         <nav className="flex items-center justify-end max-w-[1400px] mx-auto">
           {/* Desktop Navigation */}
@@ -119,6 +115,7 @@ export default function Navigation() {
                 key={item.name}
                 href={item.href}
                 className="nav-link animated-underline text-sm uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors duration-300"
+                style={{ opacity: 0 }}
               >
                 {item.name}
               </Link>
@@ -126,6 +123,7 @@ export default function Navigation() {
             <Link
               href="#contact"
               className="nav-link magnetic-btn text-xs"
+              style={{ opacity: 0 }}
             >
               <span>Let&apos;s Talk</span>
             </Link>
