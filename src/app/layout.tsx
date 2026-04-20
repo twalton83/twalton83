@@ -30,34 +30,40 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Tatiana Walton | Sr. Software Engineer | Product Builder | DX & Tooling",
+  metadataBase: new URL("https://tatianawalton.com"),
+  title: "Tatiana Walton | FiveM Developer & NYC Software Engineer | Consulting",
   description:
-    "Sr. Software Engineer and Product Builder specializing in developer experience, tooling, CI/CD, and creative technology. Building products I actually love to use.",
+    "FiveM Developer and NYC Software Engineer offering custom FiveM server development, scripting, and software consulting in New York City. Specializing in game development, AI integration, and scalable solutions.",
   keywords: [
+    "FiveM Developer",
+    "FiveM Scripter",
+    "FiveM Server Development",
+    "NYC Software Engineer",
+    "New York Software Engineer",
+    "NYC Software Consulting",
+    "New York Software Consulting",
+    "NYC Developer",
+    "Freelance Developer NYC",
     "Software Engineer",
     "Product Builder",
     "Developer Experience",
-    "CI/CD",
-    "Testing",
     "React",
-    "Vue.js",
     "TypeScript",
-    "Creative Technology",
-    "NYC",
+    "AI Integration",
   ],
   authors: [{ name: "Tatiana Walton" }],
   openGraph: {
-    title: "Tatiana Walton | Sr. Software Engineer | Product Builder",
+    title: "Tatiana Walton | FiveM Developer & NYC Software Engineer",
     description:
-      "Building products I actually love to use, and making sure teams ship with speed and confidence.",
+      "FiveM Developer and Software Engineer in NYC. Custom FiveM server development, scripting, and software consulting services.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tatiana Walton | Sr. Software Engineer",
+    title: "Tatiana Walton | FiveM Developer & NYC Software Engineer",
     description:
-      "Product Builder & DX Enthusiast. Building products I actually love to use.",
+      "FiveM Developer and Software Engineer in NYC. Custom server development, scripting, and consulting.",
   },
   robots: {
     index: true,

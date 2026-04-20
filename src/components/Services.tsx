@@ -55,15 +55,9 @@ export default function Services() {
               <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-3">
                 {service.title}
               </h3>
-              <p className="text-[var(--text-muted)] mb-4">
+              <p className="text-[var(--text-muted)]">
                 {service.description}
               </p>
-              {/* Hidden keywords for SEO */}
-              <div className="hidden">
-                {service.keywords.map((keyword) => (
-                  <span key={keyword}>{keyword}</span>
-                ))}
-              </div>
             </div>
           ))}
         </div>
