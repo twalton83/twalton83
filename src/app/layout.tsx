@@ -30,7 +30,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tatianawalton.com"),
+  metadataBase: new URL("https://tatianacodes.com"),
   title: "Tatiana Walton | FiveM Developer & NYC Software Engineer | Consulting",
   description:
     "FiveM Developer and NYC Software Engineer offering custom FiveM server development, scripting, and software consulting in New York City. Specializing in game development, AI integration, and scalable solutions.",
