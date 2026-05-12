@@ -31,6 +31,7 @@ export default function Navigation() {
   const menuTimelineRef = useRef<gsap.core.Timeline | null>(null);
   const mobileOverlayRef = useRef<HTMLDivElement>(null);
   const mobileLinksRef = useRef<HTMLDivElement>(null);
+  const initialMount = useRef(true);
 
   // Entrance animation + scroll direction show/hide
   useGSAP(() => {
@@ -61,6 +62,10 @@ export default function Navigation() {
   });
 
   useEffect(() => {
+    if (initialMount.current) {
+      initialMount.current = false;
+      return;
+    }
     if (!headerRef.current) return;
     gsap.to(headerRef.current, { y: 0, duration: 0.3, ease: 'power2.out' });
     const navLinks = headerRef.current.querySelectorAll('.nav-link');
