@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -8,14 +9,22 @@ import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const navItems = [
+const homeNavItems = [
   { name: 'About', href: '#about' },
   { name: 'Work', href: '#capabilities' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
+const subpageNavItems = [
+  { name: 'Home', href: '/' },
+  { name: 'Contact', href: '/#contact' },
+];
+
 export default function Navigation() {
+  const pathname = usePathname();
+  const navItems = pathname === '/' ? homeNavItems : subpageNavItems;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
@@ -39,21 +48,6 @@ export default function Navigation() {
       { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, delay: 0.3, ease: 'power2.out' }
     );
 
-    // Show/hide on scroll direction
-    let lastScroll = 0;
-    ScrollTrigger.create({
-      start: 'top -100',
-      onUpdate: (self) => {
-        const currentScroll = self.scroll();
-        if (currentScroll > lastScroll && currentScroll > 200) {
-          gsap.to(headerRef.current, { y: -100, duration: 0.3, ease: 'power2.in' });
-        } else {
-          gsap.to(headerRef.current, { y: 0, duration: 0.3, ease: 'power2.out' });
-        }
-        lastScroll = currentScroll;
-      },
-    });
-
     // Scroll progress bar
     ScrollTrigger.create({
       start: 'top top',
@@ -65,6 +59,14 @@ export default function Navigation() {
       },
     });
   });
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+    gsap.to(headerRef.current, { y: 0, duration: 0.3, ease: 'power2.out' });
+    const navLinks = headerRef.current.querySelectorAll('.nav-link');
+    gsap.to(navLinks, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08, ease: 'power2.out' });
+    ScrollTrigger.refresh();
+  }, [pathname]);
 
   // Mobile menu timeline
   useEffect(() => {
@@ -100,11 +102,25 @@ export default function Navigation() {
     }
   }, [isMobileMenuOpen]);
 
+  const handleHashClick = (e: React.MouseEvent, href: string) => {
+    const hash = href.includes('#') ? href.split('#')[1] : null;
+    if (!hash) return;
+
+    if (pathname === '/' || href.startsWith('#')) {
+      e.preventDefault();
+      const el = document.getElementById(hash);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <>
       <header
         ref={headerRef}
-        className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12"
+        className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 bg-[var(--bg-primary)]/80 backdrop-blur-md"
         style={{ transform: 'translateY(-100px)' }}
       >
         <nav className="flex items-center justify-end max-w-[1400px] mx-auto">
@@ -114,6 +130,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
+                onClick={(e) => handleHashClick(e, item.href)}
                 className="nav-link animated-underline text-sm uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors duration-300"
                 style={{ opacity: 0 }}
               >
@@ -122,6 +139,7 @@ export default function Navigation() {
             ))}
             <Link
               href="#contact"
+              onClick={(e) => handleHashClick(e, '#contact')}
               className="nav-link magnetic-btn text-xs"
               style={{ opacity: 0 }}
             >
@@ -175,7 +193,10 @@ export default function Navigation() {
             <Link
               key={item.name}
               href={item.href}
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => {
+                setIsMobileMenuOpen(false);
+                handleHashClick(e, item.href);
+              }}
               className="text-4xl font-bold text-[var(--text-primary)] hover:text-[var(--accent-primary)] transition-colors"
               style={{ fontFamily: 'var(--font-display)' }}
             >

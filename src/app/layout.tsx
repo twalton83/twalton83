@@ -50,6 +50,8 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
     "AI Integration",
+    "Open Source",
+    "Open Source Scripts",
   ],
   authors: [{ name: "Tatiana Walton" }],
   openGraph: {
