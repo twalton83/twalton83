@@ -67,10 +67,13 @@ export default async function ProjectsPage() {
 
           <TextReveal
             as="h1"
-            className="text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[1.1] mb-12"
+            className="text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[1.1] mb-4"
           >
             Featured Projects
           </TextReveal>
+          <p className="text-[var(--text-muted)] text-lg mb-12" style={{ fontFamily: "var(--font-mono)" }}>
+            Selected side works that are open sourced or otherwise cool that I&apos;ve been working on.
+          </p>
           {repos.length > 0 ? (
             <div className="space-y-16">
               {fivemRepos.length > 0 && (
@@ -89,7 +92,6 @@ export default async function ProjectsPage() {
                         description={repo.description}
                         htmlUrl={repo.html_url}
                         homepage={repo.homepage}
-
                       />
                     ))}
                   </div>
@@ -112,7 +114,6 @@ export default async function ProjectsPage() {
                         description={repo.description}
                         htmlUrl={repo.html_url}
                         homepage={repo.homepage}
-
                       />
                     ))}
                   </div>
